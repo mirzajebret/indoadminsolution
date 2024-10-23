@@ -28,4 +28,32 @@ function toggleParagraph(arrow) {
     }
 }
 
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// ANIMATE ON SCROLL
+const cards = document.querySelectorAll('.card');
+
+// Fungsi untuk memeriksa setiap kartu
+function checkCards() {
+    cards.forEach(card => {
+        if (isElementInViewport(card)) {
+            card.classList.add('visible'); // Tambahkan kelas visible jika terlihat
+        }
+    });
+}
+
+// Cek kartu saat scroll
+window.addEventListener('scroll', checkCards);
+
+// Panggil fungsi untuk memeriksa saat halaman pertama kali dimuat
+checkCards();
+
 
