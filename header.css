@@ -79,7 +79,7 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 77px; /* Adjust based on header height */
+        top: 57px; /* Adjust based on header height */
         right: 0;
         padding: 10px 0 30px 0 ;
         border-radius: 10px;
@@ -105,8 +105,10 @@
         color: black;
         
       }
-      
+      #header{
+      padding: 8px 5%;
+    }
       .header-logo h3 {
-      font-size: 15px;
+      font-size: 13px;
       }
     }
