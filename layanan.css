@@ -10,6 +10,7 @@
 }
 
 .service-page p {
+    font-weight: y00;
     margin-bottom: 40px;
     line-height: 1.6;
 }
@@ -74,6 +75,9 @@
     .service-details {
         margin: 0 0 0 000px;
     }
+    .service-details ul li strong{
+        font-size: 20px;
+    }
     
 }
 @media (max-width: 768px) {
@@ -97,4 +101,8 @@
     .service-details ul li {
         text-align: center;
     }
+    .service-details ul li strong{
+        font-size: 17px;
+    }
+    
 }
