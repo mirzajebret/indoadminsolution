@@ -1,0 +1,66 @@
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.about-content {
+    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 310px;
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+}

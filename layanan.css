@@ -1,0 +1,100 @@
+/* Service Page Styling */
+.service-page {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-page h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.service-page p {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.service-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 100px 0 100px;
+}
+
+.service-details img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.service-details ul {
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+.service-details ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.service-details ul li strong{
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+.service-details ul li::before {
+    content: "✔";
+    color: #007BFF;
+    left: 0;
+}
+
+/* drop down button */
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px; /* Ukuran font untuk panah */
+}
+
+/* Simbol panah */
+.arrow::before {
+    content: "▼"; /* Simbol panah bawah */
+    font-size: 13px; 
+    color: #007BFF;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1090px) {
+    .service-details {
+        margin: 0 0 0 000px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .service-details {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 0 0;
+        align-items: stretch;
+    }
+
+    .service-details img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .service-details ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .service-details ul li {
+        text-align: center;
+    }
+}
