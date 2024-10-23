@@ -45,16 +45,19 @@
 
 .hero-text p {
     background-color: transparent;
-    font-family: "Red Hat Display", sans-serif;
     font-weight: 300;
     font-size: 22px;
     margin: 15px 0  30px 0;
 }
 
+.hero-text{
+    text-align: left;
+}
+
 .cta-button {
+    font-family: "Red Hat Display", sans-serif; 
     background-color: #007BFF;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -70,8 +73,8 @@
 .hero {
     flex-direction: column;
     text-align: center;
-    height: 90vh;
-    clip-path: polygon(0 100%, 100% 90%, 100% 0, 0 0);
+    height: 100vh;
+    clip-path: polygon(0 100%, 100% 95%, 100% 0, 0 0);
 
 }
 .hero{
