@@ -25,6 +25,7 @@ p {
 .services {
     padding: 30px;
     text-align: center;
+    background-color: #d6f5ff;
 }
 
 .services h2 {
@@ -49,7 +50,8 @@ p {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Efek transisi */
     transform: translateY(20px); /* Pindahkan sedikit ke bawah */
     opacity: 0; /* Mulai dengan transparan */
-    background-color: #f5f6f8;
+    /* background-color: #f5f6f8; */
+    background-color: #fff;
     width: 30%;
     border-width: 1px;
     border-style: solid;
@@ -69,13 +71,7 @@ p {
     margin-bottom: 15px;
 }
 
-/* Footer */
-.footer {
-    background-color: #001F3F;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
