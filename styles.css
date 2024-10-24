@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Blinker", sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 h1 {
