@@ -47,7 +47,7 @@
     background-color: transparent;
     font-weight: 300;
     font-size: 22px;
-    margin: 15px 0  30px 0;
+    margin: 25px 0  50px 0;
 }
 
 .hero-text{
@@ -67,6 +67,18 @@
 
 .cta-button:hover {
     background-color: #0056b3;
+}
+
+#animated-text {
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 1000px) {
+    .hero {
+        clip-path: polygon(0 100%, 100% 85%, 100% 0, 0 0);
+    }
 }
 
 @media (max-width: 900px) {
