@@ -3,7 +3,7 @@
 /* Header */
 #header {
     background-color: #F3F3FA;
-    padding: 15px 5%;
+    padding: 10px 5%;
     color: black;
     position: sticky;
     top: 0;
@@ -24,7 +24,6 @@
   }
   
   .header-logo h3 {
-    
     font-size: 22px;
     transition: font-size 0.3s ease; 
   }
