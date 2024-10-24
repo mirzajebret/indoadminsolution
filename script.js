@@ -47,7 +47,7 @@ function startTypingAnimation() {
             textIndex++;
         }
 
-        document.getElementById("animated-text").innerHTML = `Solusi cepat untuk urusan ${currentText} <br> usaha Anda`;
+        document.getElementById("animated-text").innerHTML = `Solusi cepat untuk urusan<br> ${currentText} <br> usaha Anda`;
 
         if (!isDeleting && textIndex === displayText.length) {
             setTimeout(() => isDeleting = true, 1000); // Pause at the end
