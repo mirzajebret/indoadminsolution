@@ -2,7 +2,7 @@
 
 /* Header */
 #header {
-    background-color: #F3F3FA;
+    background-color: #134c90;
     padding: 10px 5%;
     color: black;
     position: sticky;
@@ -10,7 +10,7 @@
     transition:  0.3s ease;
     z-index: 1000;
     }
-/* Hamburger Menu */
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -57,6 +57,7 @@
   
   .menu-button {
     display: none;
+    color: #fff
   }
   
   .nav-links a:hover {
@@ -68,7 +69,7 @@
     font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
     /* font-style: italic; */
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
     margin: 0 10px;
@@ -86,7 +87,7 @@
         right: 0;
         padding: 10px 0 30px 0 ;
         border-radius: 10px;
-        background-color: #F3F3FA;
+        background-color: #134c90;
       }
       
       .nav-links.active {
@@ -105,7 +106,7 @@
         font-size: 16px; /* Adjust font size for mobile */
         padding-left: 30px;
         text-align: left;
-        color: black;
+  
         
       }
       #header{
