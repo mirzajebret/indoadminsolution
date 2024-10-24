@@ -2,12 +2,12 @@
 .service-page {
     padding: 50px;
     text-align: center;
+    background-color: #d6f5ff;
 }
 
 .service-page h1 {
     font-weight: 600;
-    
-    margin-bottom: 20px;
+        margin-bottom: 20px;
 }
 
 .service-page p {
