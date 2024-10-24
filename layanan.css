@@ -65,7 +65,7 @@
 /* Simbol panah */
 .arrow::before {
     content: "▼"; /* Simbol panah bawah */
-    font-size: 13px; 
+    font-size: 23px; 
     color: #007BFF;
 }
 
@@ -103,6 +103,10 @@
     }
     .service-details ul li strong{
         font-size: 17px;
+    }
+
+    .arrow::before {
+        font-size: 13px; 
     }
     
 }
