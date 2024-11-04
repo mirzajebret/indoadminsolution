@@ -18,10 +18,21 @@ p {
   font-size: 16px;  
 }
   
-/* Hero Section */
 
+.hubungi-kami .card img{
+    background: #fff;
+    padding:10px;
+    position: absolute;
+    width: 55px;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c2cacf;
+    top: -30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
 
-/* Services Section */
 .services {
     padding: 30px;
     text-align: center;
@@ -48,12 +59,12 @@ p {
 .service-cards {
     display: flex;
     justify-content: space-around;
-    margin: 20px auto; /* Center the container */
+    margin: 20px auto; 
     max-width: 1300px;
 }
 
 .card {
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Efek transisi */
+    transition: opacity 0.5s ease, transform 0.5s ease; 
     transform: translateY(20px); /* Pindahkan sedikit ke bawah */
     opacity: 0; /* Mulai dengan transparan */
     /* background-color: #f5f6f8; */

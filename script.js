@@ -64,8 +64,7 @@ function startTypingAnimation() {
     type();
 }
 
-
-// dropdown
+// Dropdown function
 function toggleParagraph(arrow) {
     const paragraph = arrow.nextElementSibling;
     if (paragraph.style.display === "none" || paragraph.style.display === "") {
@@ -75,6 +74,7 @@ function toggleParagraph(arrow) {
     }
 }
 
+// Check if an element is in viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -88,19 +88,63 @@ function isElementInViewport(el) {
 // ANIMATE ON SCROLL
 const cards = document.querySelectorAll('.card');
 
-// Fungsi untuk memeriksa setiap kartu
+// Function to check each card
 function checkCards() {
     cards.forEach(card => {
         if (isElementInViewport(card)) {
-            card.classList.add('visible'); // Tambahkan kelas visible jika terlihat
+            card.classList.add('visible'); // Add visible class if in viewport
         }
     });
 }
 
-// Cek kartu saat scroll
+// Check cards on scroll
 window.addEventListener('scroll', checkCards);
 
-// Panggil fungsi untuk memeriksa saat halaman pertama kali dimuat
+// Call function to check on initial page load
 checkCards();
 
+// Carousel functionality
+const carouselInner = document.querySelector('.carousel-inner');
+const carouselCards = document.querySelectorAll('.carousel-card');
+const totalCards = carouselCards.length;
 
+let currentIndex = 0;
+let cardsToShow = 3; // Default untuk desktop
+
+// Fungsi untuk mengatur jumlah card yang ditampilkan
+function updateCardsToShow() {
+    const width = window.innerWidth;
+    if (width < 769) {
+        cardsToShow = 1; // Tampilkan 1 card pada layar kecil
+    } else if (width < 1025) {
+        cardsToShow = 2; // Tampilkan 2 card pada layar menengah
+    } else {
+        cardsToShow = 3; // Tampilkan 3 card pada layar besar
+    }
+}
+
+// Fungsi untuk menggeser carousel
+function showNext() {
+    const offset = (currentIndex + cardsToShow) % totalCards; // Hitung index berikutnya
+    currentIndex = offset;
+
+    const cardWidth = 250; // Lebar card (sesuaikan jika berbeda)
+    const margin = 20; // Margin antar card
+    const translateX = -currentIndex * (cardWidth + margin); // Hitung posisi
+    carouselInner.style.transform = `translateX(${translateX}px)`;
+}
+
+// Fungsi untuk mengatur ulang carousel saat ukuran jendela berubah
+function handleResize() {
+    updateCardsToShow();
+    showNext(); // Panggil showNext untuk menyesuaikan posisi saat resize
+}
+
+// Set interval untuk otomatis geser
+setInterval(showNext, 3000); // Ganti setiap 3 detik
+
+// Event listener untuk resize
+window.addEventListener('resize', handleResize);
+
+// Inisialisasi
+updateCardsToShow();
