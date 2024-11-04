@@ -19,6 +19,12 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     flex: 0 0 auto; /* Membuat card tidak menyusut */
     width: 250px; /* Atur lebar card */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.carousel-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
 }
 
 .carousel-card img {

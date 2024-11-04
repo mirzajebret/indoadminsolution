@@ -103,48 +103,68 @@ window.addEventListener('scroll', checkCards);
 // Call function to check on initial page load
 checkCards();
 
-// Carousel functionality
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselCards = document.querySelectorAll('.carousel-card');
 const totalCards = carouselCards.length;
 
 let currentIndex = 0;
-let cardsToShow = 3; // Default untuk desktop
+let cardsToShow = 3; // Default for desktop
+let intervalId; // Variable to hold the interval ID
 
-// Fungsi untuk mengatur jumlah card yang ditampilkan
+// Function to update number of cards to show
 function updateCardsToShow() {
     const width = window.innerWidth;
     if (width < 769) {
-        cardsToShow = 1; // Tampilkan 1 card pada layar kecil
+        cardsToShow = 1; // Show 1 card on small screens
     } else if (width < 1025) {
-        cardsToShow = 2; // Tampilkan 2 card pada layar menengah
+        cardsToShow = 2; // Show 2 cards on medium screens
     } else {
-        cardsToShow = 3; // Tampilkan 3 card pada layar besar
+        cardsToShow = 3; // Show 3 cards on large screens
     }
 }
 
-// Fungsi untuk menggeser carousel
+// Function to show the next set of cards
 function showNext() {
-    const offset = (currentIndex + cardsToShow) % totalCards; // Hitung index berikutnya
-    currentIndex = offset;
+    // Update the current index
+    currentIndex = (currentIndex + cardsToShow) % totalCards; // Wrap around if needed
 
-    const cardWidth = 250; // Lebar card (sesuaikan jika berbeda)
-    const margin = 20; // Margin antar card
-    const translateX = -currentIndex * (cardWidth + margin); // Hitung posisi
+    const cardWidth = 250; // Width of each card
+    const margin = 20; // Margin between cards
+
+    // Calculate total visible width and the offset needed to center the current card
+    const totalVisibleWidth = (cardWidth + margin) * cardsToShow;
+    const translateX = -((currentIndex * (cardWidth + margin)) + (totalVisibleWidth / 2) - (cardWidth / 2));
+
+    // Apply the translation
     carouselInner.style.transform = `translateX(${translateX}px)`;
 }
 
-// Fungsi untuk mengatur ulang carousel saat ukuran jendela berubah
+
+// Function to handle window resize
 function handleResize() {
     updateCardsToShow();
-    showNext(); // Panggil showNext untuk menyesuaikan posisi saat resize
+    showNext(); // Call showNext to adjust position on resize
 }
 
-// Set interval untuk otomatis geser
-setInterval(showNext, 3000); // Ganti setiap 3 detik
+// Start automatic sliding
+function startCarousel() {
+    intervalId = setInterval(showNext, 3000); // Change every 3 seconds
+}
 
-// Event listener untuk resize
+// Pause automatic sliding
+function pauseCarousel() {
+    clearInterval(intervalId);
+}
+
+// Event listeners for hover
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('mouseenter', pauseCarousel);
+carousel.addEventListener('mouseleave', startCarousel);
+
+// Event listener for window resize
 window.addEventListener('resize', handleResize);
 
-// Inisialisasi
+// Initialize
 updateCardsToShow();
+startCarousel();
+
