@@ -23,7 +23,7 @@
     bottom: 0;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
-        url('https://img.freepik.com/free-vector/gradient-grainy-gradient-background_23-2149881101.jpg?t=st=1730794635~exp=1730798235~hmac=6753e45df2b771b2e153193b0a4cb88510fc9c2ecdecb309272936735f9a5ed3&w=1380');
+        url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/Screenshot%202024-11-05%20154255.jpg?raw=true');
     background-size: cover;
     z-index: 0; /* Send the background behind the content */
 }
