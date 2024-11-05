@@ -23,7 +23,7 @@
     bottom: 0;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay */
-        url('https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        url('https://img.freepik.com/free-vector/gradient-grainy-gradient-background_23-2149881101.jpg?t=st=1730794635~exp=1730798235~hmac=6753e45df2b771b2e153193b0a4cb88510fc9c2ecdecb309272936735f9a5ed3&w=1380');
     background-size: cover;
     z-index: 0; /* Send the background behind the content */
 }
@@ -64,7 +64,7 @@
 
 .cta-button {
     font-family: "Red Hat Display", sans-serif; 
-    background-color: #007BFF;
+    background-color: #ff5722;
     font-weight: 600;
     color: white;
     padding: 10px 20px;
@@ -74,7 +74,7 @@
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #db491c;
 }
 
 #animated-text {

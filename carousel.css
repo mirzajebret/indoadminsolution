@@ -34,6 +34,7 @@
     text-align: center;
     position: relative;
     width: 20px; 
+    transition: filter 0.5s ease;
 }
 
 .carousel-card::before {
@@ -48,11 +49,15 @@
 }
 
 .carousel-card img {
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     filter: invert(1) brightness(100%);
 }
 
+.carousel-card:hover {
+    filter: invert(1) brightness(50%) sepia(1) saturate(5) hue-rotate(-30deg);
+    border:none;
+}
 /* Gaya untuk judul dalam card */
 .carousel-card h2 {
     font-weight: 600;

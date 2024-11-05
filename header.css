@@ -2,12 +2,10 @@
 
 /* Header */
 #header {
-    background-color: #134c90;
+  background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
     padding: 10px 5%;
-    color: black;
     position: sticky;
     top: 0;
-    transition:  0.3s ease;
     z-index: 1000;
     }
 
@@ -31,19 +29,7 @@
     font-size: 22px;
     transition: font-size 0.3s ease; 
   }
-  
-  .header-logo h3 a {
-    font-size: 22px;
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-family: "Blinker", sans-serif;
-    font-weight: 400;
-  }
-  
-  .header-logo h3 a:hover {
-    color: #007BFF;
-  }
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -61,8 +47,7 @@
   }
   
   .nav-links a:hover {
-    color: #007BFF;
-    
+    color: #41444b;
   }
   
   .nav-links a {
@@ -87,7 +72,7 @@
         right: 0;
         padding: 10px 0 30px 0 ;
         border-radius: 10px;
-        background-color: #134c90;
+        background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
       }
       
       .nav-links.active {

@@ -7,7 +7,7 @@
 .service-page {
     padding: 50px;
     text-align: center;
-    background-color: #d6f5ff;
+    background-color: #f6f4e6;
 }
 
 .service-page h1 {
@@ -134,7 +134,7 @@
     display: block;
     width: 50%; /* Width of the underline */
     height: 2px; /* Thickness of the underline */
-    background: #007BFF; /* Color of the underline */
+    background: #ff5722; /* Color of the underline */
     margin: 10px auto 0; /* Center the underline */
 }
 
