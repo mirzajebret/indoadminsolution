@@ -1,6 +1,6 @@
 /* General Styles */
 footer {
-    background-color: #134c90;
+    background-color: #ff621f;
     color: white;
     padding: 50px 0;
     font-family: Arial, sans-serif;
@@ -68,7 +68,7 @@ img.text-image-square {
 
 .social-icons a:hover {
     background-color: white;
-    color: #0056b3;
+    color: #db491c;
 }
 
 /* Links Section */
@@ -89,7 +89,40 @@ img.text-image-square {
 }
 
 .footer-section.links ul li a:hover {
-    color: #007BFF  ;
+    color: #ff5722  ;
+}
+
+/*  */
+/* style.css */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Untuk memastikan video yang lebih besar tetap terpotong di dalam container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #whatsapp-button video {
+    width: 40px; /* Pastikan video mengisi lebar container */
+    height: 40px; /* Pastikan video mengisi tinggi container */
+    max-width: 100%; /* Pastikan video mengisi lebar container */
+    object-fit: cover; /* Membuat video terpotong dan mengisi container */
+    transform: scale(1.9); /* Skala untuk zoom in (ubah angka sesuai kebutuhan) */
+    border-radius: 50%; /* Agar video berbentuk bulat */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+  }
+  
+  #whatsapp-button:hover video {
+    transform: scale(2.8); /* Lebih besar saat hover (bisa diubah) */
+  }
+  
+.whatsapp-button-container:hover {
+transform: scale(1.1); /* Efek zoom saat hover */
 }
 
 /* Responsive Design */
@@ -97,7 +130,12 @@ img.text-image-square {
     .footer-container {
         flex-direction: column;
     }
-
+    #whatsapp-button video {
+        width: 30px; /* Pastikan video mengisi lebar container */
+        height: 30px; /* Pastikan video mengisi tinggi container */
+        transform: scale(2); /* Skala untuk zoom in (ubah angka sesuai kebutuhan) */
+    }
+    
     .footer-section {
     }
 }
