@@ -25,6 +25,11 @@
     justify-content: center; 
     gap: 20px; 
 }
+.card-content img{
+    width: 40px; 
+    height: 40px; 
+    filter: invert(1) brightness(100%);
+}
 
 .card {
     position: relative; 
@@ -36,6 +41,14 @@
     background-color: white; 
 }
 
+.card-content{
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: -20px;
+    color: white;
+}
+
 .badge-icon {
     position: absolute;
     top: -10px;
@@ -45,23 +58,37 @@
     height: auto; /* Maintain aspect ratio */
 }
 
-
-
 .card h2 {
+    padding: 10px;
     font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .card p {
-    padding:  20px 0 30px 0;
+    font-weight: 600;
+    padding:  30px 0 10px 0;
 
 }
 
 .list {
     padding: 0 0 20px 20px;
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 
 .list li {
-    font-weight: 600;
+    font-size: 15px;
+    color: #444;
     margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.list li::before{
+    content: '✔';
+    color: #00aaff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cta-service-button {
@@ -90,7 +117,6 @@
     text-fill-color: transparent;
     display: inline-block; /* Ensures the gradient applies to the text */
     font-weight: 600;
-
 }
 .subheading {
     padding-top: 40px;

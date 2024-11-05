@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('header').innerHTML = headerData;
         document.getElementById('footer').innerHTML = footerData;
 
-        // Initialize menu button functionality
         const menuButton = document.querySelector('.menu-button');
         const navLinks = document.querySelector('.nav-links');
 
@@ -64,17 +63,7 @@ function startTypingAnimation() {
     type();
 }
 
-// Dropdown function
-function toggleParagraph(arrow) {
-    const paragraph = arrow.nextElementSibling;
-    if (paragraph.style.display === "none" || paragraph.style.display === "") {
-        paragraph.style.display = "block";
-    } else {
-        paragraph.style.display = "none";
-    }
-}
 
-// Check if an element is in viewport
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -88,19 +77,16 @@ function isElementInViewport(el) {
 // ANIMATE ON SCROLL
 const cards = document.querySelectorAll('.card');
 
-// Function to check each card
 function checkCards() {
     cards.forEach(card => {
         if (isElementInViewport(card)) {
-            card.classList.add('visible'); // Add visible class if in viewport
+            card.classList.add('visible'); 
         }
     });
 }
 
-// Check cards on scroll
 window.addEventListener('scroll', checkCards);
 
-// Call function to check on initial page load
 checkCards();
 
 const carouselInner = document.querySelector('.carousel-inner');
@@ -108,10 +94,9 @@ const carouselCards = document.querySelectorAll('.carousel-card');
 const totalCards = carouselCards.length;
 
 let currentIndex = 0;
-let cardsToShow = 3; // Default for desktop
-let intervalId; // Variable to hold the interval ID
+let cardsToShow = 3; 
+let intervalId; 
 
-// Function to update number of cards to show
 function updateCardsToShow() {
     const width = window.innerWidth;
     if (width < 769) {
@@ -123,32 +108,29 @@ function updateCardsToShow() {
     }
 }
 
-// Function to show the next set of cards
 function showNext() {
-    // Update the current index
-    currentIndex = (currentIndex + cardsToShow) % totalCards; // Wrap around if needed
+    currentIndex = (currentIndex + cardsToShow) % totalCards; 
 
-    const cardWidth = 250; // Width of each card
-    const margin = 20; // Margin between cards
+    const cardWidth = document.querySelector('.carousel-card').offsetWidth;
+    const margin = 20; 
 
-    // Calculate total visible width and the offset needed to center the current card
     const totalVisibleWidth = (cardWidth + margin) * cardsToShow;
     const translateX = -((currentIndex * (cardWidth + margin)) + (totalVisibleWidth / 2) - (cardWidth / 2));
 
-    // Apply the translation
     carouselInner.style.transform = `translateX(${translateX}px)`;
+
 }
 
 
-// Function to handle window resize
+
 function handleResize() {
     updateCardsToShow();
-    showNext(); // Call showNext to adjust position on resize
+    showNext(); 
 }
 
 // Start automatic sliding
 function startCarousel() {
-    intervalId = setInterval(showNext, 3000); // Change every 3 seconds
+    intervalId = setInterval(showNext, 5000); // Change every 3 seconds
 }
 
 // Pause automatic sliding
@@ -161,10 +143,45 @@ const carousel = document.querySelector('.carousel');
 carousel.addEventListener('mouseenter', pauseCarousel);
 carousel.addEventListener('mouseleave', startCarousel);
 
-// Event listener for window resize
+
 window.addEventListener('resize', handleResize);
 
-// Initialize
+
 updateCardsToShow();
 startCarousel();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.carousel-inner');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+    
+    let index = 0; 
+    const totalCards = document.querySelectorAll('.carousel-card').length;
+    const cardWidth = document.querySelector('.carousel-card').offsetWidth + 20; 
+
+    function goToPrev() {
+        if (index > 0) {
+            index--;
+        } else {
+            index = totalCards - 1; 
+        }
+        updateCarousel();
+    }
+
+    function goToNext() {
+        if (index < totalCards - 1) {
+            index++;
+        } else {
+            index = 0; 
+        }
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    prevButton.addEventListener('click', goToPrev);
+    nextButton.addEventListener('click', goToNext);
+});
 

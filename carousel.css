@@ -1,63 +1,177 @@
+
+.carousel-container {
+    position: relative;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    padding: 80px;
+}
+
 .carousel {
     position: relative;
+    width: 100%;
     overflow: hidden;
-    width: 100%; /* Lebar penuh pada layar kecil */
-    margin: auto; /* Pusatkan carousel */
+    margin: auto; 
 }
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease; 
 }
 
 .carousel-card {
+    display: block;
+    text-decoration: none;
+    color: inherit; 
     background-color: #fff;
+    background-size: cover;
+    background-position: center;
     border: 1px solid #c2cacf;
-    border-radius: 10px;
     padding: 20px;
-    margin: 10px; /* Jarak antar card */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 0 0 auto; /* Membuat card tidak menyusut */
-    width: 250px; /* Atur lebar card */
-    transition: transform 0.3s ease;
+    margin: 10px;
+    flex: 0 0 auto;     
     text-align: center;
+    position: relative;
+    width: 20px; 
 }
 
-.carousel-card:hover {
-    transform: scale(1.05); /* Efek zoom saat hover */
+.carousel-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken the background */
+    z-index: 0; 
 }
 
 .carousel-card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    width: 40px; 
+    height: 40px; 
+    filter: invert(1) brightness(100%);
 }
 
+/* Gaya untuk judul dalam card */
 .carousel-card h2 {
+    font-weight: 600;
     font-size: 1.2em;
     margin: 10px 0;
+    color: #fff;
+    position: relative; 
+    z-index: 1; 
 }
 
 .carousel-card p {
     font-size: 0.9em;
-    color: #555;
+    color: #fff;
+    position: relative;
+    z-index: 1; 
 }
 
-/* Media Queries */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Background gambar untuk setiap card */
+.carousel-card:nth-child(1) {
+    background-image: url('https://images.unsplash.com/photo-1554232456-8727aae0cfa4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXBhbnl8ZW58MHx8MHx8fDI%3D');
+}
+
+.carousel-card:nth-child(2) {
+    background-image: url('https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNvbXBhbnl8ZW58MHx8MHx8fDI%3D');
+}
+
+.carousel-card:nth-child(3) {
+    background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbXBhbnl8ZW58MHx8MHx8fDI%3D');
+}
+
+.carousel-card:nth-child(4) {
+    background-image: url('https://images.unsplash.com/photo-1620868276546-e2e0702f3ea6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ2fHxjb21wYW55fGVufDB8fDB8fHwy');
+}
+.carousel-card:nth-child(5) {
+    background-image: url('https://images.unsplash.com/photo-1531497082986-2422f7b87330?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI4fHxjb21wYW55fGVufDB8fDB8fHwy');
+}
+.carousel-card:nth-child(6) {
+    background-image: url('https://images.unsplash.com/photo-1710367847938-c92cf56a7a9b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE5fHxjb21wYW55fGVufDB8fDB8fHwy');
+}
+.carousel-card:nth-child(7) {
+    background-image: url('https://images.unsplash.com/photo-1502465771179-51f3535da42c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGxhdyUyMGZpcm18ZW58MHx8MHx8fDI%3D');
+}
+.carousel-card:nth-child(8) {
+    background-image: url('https://images.unsplash.com/photo-1709715357696-3c80fde2948d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzE4fHxjb21wYW55fGVufDB8fDB8fHwy');
+}
+.carousel-card:nth-child(9) {
+    background-image: url('https://images.unsplash.com/photo-1621926187610-946177e44cca?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGNoYXJpdHl8ZW58MHx8MHx8fDI%3D');
+}
+.carousel-card:nth-child(10) {
+    background-image: url('https://images.unsplash.com/photo-1621926185752-9b8e0111c147?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGNoYXJpdHl8ZW58MHx8MHx8fDI%3D');
+}
+.carousel-card:nth-child(11) {
+    background-image: url('https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8');
+}
+.carousel-card:nth-child(12) {
+    background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI4fHx8ZW58MHx8fHx8');
+}
+.carousel-card:nth-child(13) {
+    background-image: url('https://images.unsplash.com/photo-1621998951482-d096a4c7dee4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGxlZ2FsJTIwZG9jdW1lbnR8ZW58MHx8MHx8fDI%3D');
+}
+.carousel-card:nth-child(14) {
+    background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGF3eWVyfGVufDB8fDB8fHwy');
+}
+.carousel-card:nth-child(15) {
+    background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHdlYnNpdGV8ZW58MHx8MHx8fDI%3D');
+}
+.premium{
+    background: linear-gradient(45deg, #ffd700, #ffcc00, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block; /* Ensures the gradient applies to the text */
+    font-weight: 600;
+}
+/* Media Queries untuk responsivitas */
+
+/* Untuk layar kecil (mobile) */
 @media (max-width: 768px) {
     .carousel-card {
-        width: calc(100% - 40px); /* Lebar penuh dengan margin */
+        width: calc(100% - 20px); /* Lebar penuh dengan margin kecil */
+    }
+
+    .carousel-container{
+        padding: 50px 0 50px 20px;
     }
 }
 
+/* Untuk layar tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
     .carousel-card {
-        width: calc(50% - 20px); /* Tampilkan 2 card */
+        width: calc(45% - 20px); /* Dua card dalam satu baris */
     }
 }
 
+/* Untuk layar desktop */
 @media (min-width: 1025px) {
     .carousel-card {
-        width: calc(33.33% - 20px); /* Tampilkan 3 card */
+        width: calc(30% - 20px); /* Tiga card dalam satu baris */
     }
 }
