@@ -50,22 +50,24 @@
 }
 
 .badge-icon {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c2cacf;
+    background-color: white; 
     position: absolute;
     top: -10px;
     right: -10px;
-    max-width: 30px; /* Set a max width */
-    max-height: 30px; /* Set a max width */
+    max-width: 40px; /* Set a max width */
+    max-height: 40px; /* Set a max width */
     height: auto; /* Maintain aspect ratio */
 }
 
 .card h2 {
-    padding: 10px;
     font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .card p {
-    font-weight: 600;
-    padding:  30px 0 10px 0;
+    padding:  30px 0 30px 0;
 
 }
 
