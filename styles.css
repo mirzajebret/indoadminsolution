@@ -32,6 +32,22 @@ p {
     left: 50%; 
     transform: translateX(-50%); 
 }
+#hubungi-kami::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff5722;
+    margin: 10px auto 0;
+}
+#layanan-kami::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff5722;
+    margin: 10px auto 0;
+}
 
 .services {
     padding: 30px;

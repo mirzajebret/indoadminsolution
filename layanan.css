@@ -116,7 +116,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     display: inline-block; /* Ensures the gradient applies to the text */
     font-weight: 600;
 }
@@ -138,6 +137,43 @@
     margin: 10px auto 0; /* Center the underline */
 }
 
+.service-banner {
+    background: linear-gradient(90deg, #BD330A, #ff5722, #BD330A);
+    color: white; /* Text color contrast */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-bottom: 40px; /* Space after the banner */
+}
+
+.banner-heading {
+    font-size: 2rem; /* Larger font size */
+    font-weight: 700; /* Bold text */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.banner-description {
+    font-size: 1.1rem; /* Slightly smaller font for description */
+    margin-bottom: 20px; /* Space below description */
+}
+
+.cta-banner-button {
+    font-size: 1.2rem; /* Larger button text */
+    background-color: white;
+    color: #ff5722; /* Match button color with banner */
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-banner-button:hover {
+    background-color: #ff7043; /* Lighter shade of the button color */
+    color: white; /* Button text color on hover */
+}
 
 /* Responsive Styles */
 @media (max-width: 1090px) {
@@ -154,9 +190,16 @@
     .card {
         width: 90%; /* Slightly smaller width */
     }
-
+    .banner-description{
+        display: none;
+    }
+    .service-banner{
+        margin-bottom: 0px;
+    }
+    .banner-heading{
+        padding-bottom: 20px;
+    }
     .cta-service-button{
-        
     display: block; 
     }
 }
