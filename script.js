@@ -186,3 +186,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const header = document.getElementById("header");
+
+// Add a scroll event listener
+window.addEventListener("scroll", () => {
+  // Check if the page has been scrolled down
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled"); 
+  } else {
+    header.classList.remove("scrolled"); 
+  }
+});

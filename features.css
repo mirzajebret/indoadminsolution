@@ -1,9 +1,14 @@
 /* General Section Styling */
-.testimonials-section, .blog-section, .faq-section{
+.testimonials-section, .faq-section{
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     margin: 20px 0;
-    border-radius: 10px;
+    max-width: 2000px;
+    margin: 10px auto 0;
+}
+.blog-sections{
+    background-color: #F5F5F7;
+    padding: 40px 20px;
 }
 
 /* Subheading Styling */
@@ -59,6 +64,9 @@
 
 /* Blog Section */
 .blog-section {
+    max-width: 2000px;
+    margin: 10px auto 0;
+
     display: flex;
     gap: 20px;
     justify-content: center;

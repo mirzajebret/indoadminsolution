@@ -1,16 +1,27 @@
 .hero {
     position: relative;
-    height: 60vh;
+    height: 70vh;
     display: flex;
+    top:-90px;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: white;
     gap: 150px;
     padding: 50px;
     overflow: hidden; /* Ensure content stays within the bounds */
 }
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/modern-wavy-gradient-background_79603-826.jpg?raw=true'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
 
+  }
 /* Video background */
 .hero-video {
     position: absolute;
@@ -32,7 +43,7 @@
 }
 
 .hero-text{
-    text-align: left;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -62,7 +73,7 @@
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 

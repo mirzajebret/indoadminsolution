@@ -20,7 +20,7 @@ p {
   
 
 .hubungi-kami .card img{
-    background: #fff;
+    background: ##F5F5F7;
     padding:10px;
     position: absolute;
     width: 55px;
@@ -52,7 +52,7 @@ p {
 .services {
     padding: 30px;
     text-align: center;
-    background-color: #f6f4e6;
+    background-color: #F5F5F7;
 }
 
 .services h2 {
