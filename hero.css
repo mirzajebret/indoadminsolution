@@ -1,15 +1,13 @@
 .hero {
-    position: relative;
-    height: 70vh;
+    height: 80vh;
     display: flex;
-    top:-90px;
     align-items: center;
     justify-content: center;
     color: white;
-    gap: 150px;
     padding: 50px;
-    overflow: hidden; /* Ensure content stays within the bounds */
+    overflow: hidden;
 }
+
 .hero-img {
     position: absolute;
     top: 0;
