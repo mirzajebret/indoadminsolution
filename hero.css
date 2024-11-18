@@ -38,6 +38,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    height: 90vh;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
     url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/modern-wavy-gradient-background_79603-826.jpg?raw=true');

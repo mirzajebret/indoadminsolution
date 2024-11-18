@@ -1,8 +1,103 @@
+
+/* Style Umum untuk Proses Layanan */
+.proses-layanan {
+    padding: 30px 30px 0 30px;
+  }
+  .proses-item img{
+    filter: invert(100%);
+    width:80px;
+    padding-bottom:20px;
+  }
+  .proses-layanan .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .proses-layanan h2 {
+    font-size: 2em;
+    font-weight:600;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .wadah-proses{
+    border-radius:25px;
+    padding:20px ;
+    background-color: #ff5722;
+  }
+  /* Banner dengan empat item secara horizontal */
+  .proses-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .proses-item {
+    padding: 20px;
+    width: 23%; 
+    text-align: center;
+  }
+  
+  .proses-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #fff;
+
+  }
+  
+  .proses-item p {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+
+  
+  /* Responsif untuk layar lebih kecil */
+  @media (max-width: 1200px) {
+    .proses-item {
+      width: 48%; /* Dua item dalam satu baris */
+    }
+
+    .proses-item img{
+      width:60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .proses-item {
+      width: 100%; /* Satu item per baris */
+      margin-bottom: 20px;
+    }
+    .proses-item img{
+      width:50px;
+    }
+    .proses-layanan h2 {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .proses-layanan h2 {
+      font-size: 1.8em;
+    }
+  
+    .proses-item h3 {
+      font-size: 1.2em;
+    }
+  
+    .proses-item p {
+      font-size: 0.9em;
+    }
+  }
+  
+
+
 /* General Section Styling */
 .testimonials-section, .faq-section{
     padding: 40px 20px;
     margin: 20px 0;
-    max-width: 2000px;
+    max-width: 1400px;
     margin: 10px auto 0;
 }
 .blog-sections{
@@ -63,9 +158,8 @@
 
 /* Blog Section */
 .blog-section {
-    max-width: 2000px;
+    max-width: 1800px;
     margin: 10px auto 0;
-
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -82,7 +176,13 @@
     flex: 1;
     margin: 10px;
 }
-
+.blog-card-img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    padding-bottom: 10px;
+    height:200px;
+}
 .blog-card:hover {
     transform: translateY(-5px);
 }

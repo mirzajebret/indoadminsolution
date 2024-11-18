@@ -9,8 +9,8 @@
 }
 body{
     background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/bg-circle.jpg?raw=true');
-    background-size: cover;  /* Ensures the image covers the entire background */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-size: cover;  
+    background-repeat: no-repeat; 
     background-position: center center;
 }
 h1 {
@@ -23,9 +23,11 @@ p {
   font-size: 16px;  
 }
   
-
+.call-us{
+    background-color: #F5F5F7;
+}
 .hubungi-kami .card img{
-    background: ##F5F5F7;
+    background-color: #fff;
     padding:10px;
     position: absolute;
     width: 55px;
@@ -36,22 +38,6 @@ p {
     top: -30px; 
     left: 50%; 
     transform: translateX(-50%); 
-}
-#hubungi-kami::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #ff5722;
-    margin: 10px auto 0;
-}
-#layanan-kami::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #ff5722;
-    margin: 10px auto 0;
 }
 
 .services {
@@ -74,7 +60,6 @@ p {
 .services p {
     margin-bottom: 30px;
     color: #171717;
-
 }
 
 .service-cards {
@@ -86,9 +71,8 @@ p {
 
 .card {
     transition: opacity 0.5s ease, transform 0.5s ease; 
-    transform: translateY(20px); /* Pindahkan sedikit ke bawah */
-    opacity: 0; /* Mulai dengan transparan */
-    /* background-color: #f5f6f8; */
+    transform: translateY(20px); 
+    opacity: 0; 
     background-color: #fff;
     width: 30%;
     border-width: 1px;
@@ -98,8 +82,8 @@ p {
     border-radius: 10px;
 }
 .card.visible {
-    opacity: 1; /* Tampilkan kartu */
-    transform: translateY(0); /* Kembali ke posisi awal */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .card img {
@@ -111,7 +95,7 @@ p {
 
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .service-cards {
         flex-direction: column;
