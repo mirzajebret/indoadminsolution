@@ -1,11 +1,18 @@
 
+.carousel-container h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
 .carousel-container {
+    text-align:center;
     position: relative;
     width: 100%; 
     max-width: 1200px; 
     margin: 0 auto; 
     overflow: hidden; 
-    padding: 80px;
+    padding: 50px;
 }
 
 .carousel {

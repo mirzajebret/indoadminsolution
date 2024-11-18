@@ -6,20 +6,46 @@
     color: white;
     padding: 50px;
     overflow: hidden;
+    gap: 100px;
+}
+/* carousel start */
+.hero-image {
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+}
+.carousel-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.hero-img {
+/* Show the first image */
+.hero-image img:nth-child(1) {
+    opacity: 1;
+}
+/* carousel end */
+
+/* image background */
+.hero-img { 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/modern-wavy-gradient-background_79603-826.jpg?raw=true'); 
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/modern-wavy-gradient-background_79603-826.jpg?raw=true');
     background-size: cover;
     background-position: center;
     z-index: -1; 
-
   }
+  
 /* Video background */
 .hero-video {
     position: absolute;
@@ -41,7 +67,7 @@
 }
 
 .hero-text{
-    text-align: center;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -87,6 +113,8 @@
 
 
 @media (max-width: 900px) {
+
+    
 .hero {
     flex-direction: column;
     text-align: center;

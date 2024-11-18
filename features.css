@@ -1,7 +1,6 @@
 /* General Section Styling */
 .testimonials-section, .faq-section{
     padding: 40px 20px;
-    background-color: #fff;
     margin: 20px 0;
     max-width: 2000px;
     margin: 10px auto 0;
@@ -149,8 +148,7 @@
     color: #555;
 }
 
-.faq-question:focus + .faq-answer,
-.faq-question:hover + .faq-answer {
+.faq-question:focus + .faq-answer {
     display: block;
 }
 

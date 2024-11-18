@@ -7,7 +7,12 @@
     font-weight: 300;
     scroll-behavior: smooth;
 }
-
+body{
+    background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/bg-circle.jpg?raw=true');
+    background-size: cover;  /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-position: center center;
+}
 h1 {
   font-size: 36px;  
 }
@@ -52,7 +57,7 @@ p {
 .services {
     padding: 30px;
     text-align: center;
-    background-color: #F5F5F7;
+ 
 }
 
 .services h2 {

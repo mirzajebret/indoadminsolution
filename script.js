@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // Start typing animation
         startTypingAnimation();
     }).catch(error => console.error('Error loading header or footer:', error));
+
+    startImageCarousel();
 });
 
-// Typing animation function
 function startTypingAnimation() {
     const texts = [
         "legalitas",
@@ -49,20 +49,36 @@ function startTypingAnimation() {
         document.getElementById("animated-text").innerHTML = `Solusi cepat untuk urusan<br> ${currentText} <br> usaha Anda`;
 
         if (!isDeleting && textIndex === displayText.length) {
-            setTimeout(() => isDeleting = true, 1000); // Pause at the end
+            setTimeout(() => isDeleting = true, 1000); 
         } else if (isDeleting && textIndex === 0) {
             isDeleting = false;
-            index = (index + 1) % texts.length; // Move to next text
+            index = (index + 1) % texts.length; 
         }
 
-        const typingSpeed = isDeleting ? 30 : 100; // Speed of typing
+        const typingSpeed = isDeleting ? 30 : 100; 
         setTimeout(type, typingSpeed);
     }
 
-    // Start the typing animation
     type();
 }
 
+function startImageCarousel() {
+    const images = document.querySelectorAll('.hero-image img');
+    let currentIndex = 0;
+
+    // Function to change the image
+    function changeImage() {
+        images.forEach((img, index) => {
+            img.style.opacity = '0'; 
+        });
+
+        currentIndex = (currentIndex + 1) % images.length; 
+        images[currentIndex].style.opacity = '1'; 
+    }
+
+    setInterval(changeImage, 3000); 
+    changeImage(); 
+}
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -118,34 +134,26 @@ function showNext() {
     const translateX = -((currentIndex * (cardWidth + margin)) + (totalVisibleWidth / 2) - (cardWidth / 2));
 
     carouselInner.style.transform = `translateX(${translateX}px)`;
-
 }
-
-
 
 function handleResize() {
     updateCardsToShow();
     showNext(); 
 }
 
-// Start automatic sliding
 function startCarousel() {
-    intervalId = setInterval(showNext, 5000); // Change every 3 seconds
+    intervalId = setInterval(showNext, 5000); 
 }
 
-// Pause automatic sliding
 function pauseCarousel() {
     clearInterval(intervalId);
 }
 
-// Event listeners for hover
 const carousel = document.querySelector('.carousel');
 carousel.addEventListener('mouseenter', pauseCarousel);
 carousel.addEventListener('mouseleave', startCarousel);
 
-
 window.addEventListener('resize', handleResize);
-
 
 updateCardsToShow();
 startCarousel();
@@ -185,12 +193,9 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.addEventListener('click', goToNext);
 });
 
-
 const header = document.getElementById("header");
 
-// Add a scroll event listener
 window.addEventListener("scroll", () => {
-  // Check if the page has been scrolled down
   if (window.scrollY > 10) {
     header.classList.add("scrolled"); 
   } else {

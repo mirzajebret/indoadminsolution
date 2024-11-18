@@ -1,3 +1,33 @@
+/* card png */
+
+.pngcardwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.image-gallery {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusts column size based on screen width */
+    gap: 20px; 
+    max-width: 1400px; 
+    width: 100%;
+  }
+  
+  .card-image {
+    padding: 20px;
+    width: 450px; 
+    height: auto;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image:hover {
+    transform: scale(1.05); /* Optional: adds a hover effect */
+  }
+/* END OF CARD PNG */
 
 .hero img{
     height: 100%;
@@ -7,7 +37,6 @@
 .service-page {
     padding: 50px;
     text-align: center;
-    background-color: #f6f4e6;
 }
 
 .service-page h1 {
@@ -111,14 +140,7 @@
 }
 
 /* Colors for different categories */
-.premium{
-    background: linear-gradient(45deg, #ffd700, #ffcc00, #b8860b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block; /* Ensures the gradient applies to the text */
-    font-weight: 600;
-}
+
 .subheading {
     padding-top: 40px;
     font-weight: 600;
@@ -176,10 +198,18 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1090px) {
+@media (max-width: 1020px) {
     .card {
         width: 100%; /* Full width on smaller screens */
     }
+    .card-image{
+        width: 100%; 
+        }
+        .image-gallery {
+            padding:0;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts column size based on screen width */
+        }    
+        
 }
 
 @media (max-width: 768px) {
@@ -202,4 +232,5 @@
     .cta-service-button{
     display: block; 
     }
+ 
 }
