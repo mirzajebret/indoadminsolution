@@ -66,20 +66,20 @@
   
   @media (max-width: 768px) {
     .proses-item {
-      width: 100%; /* Satu item per baris */
+      width: 45%; /* Satu item per baris */
       margin-bottom: 20px;
     }
     .proses-item img{
-      width:50px;
+      width:40px;
     }
     .proses-layanan h2 {
-      font-size: 1.8em;
+      font-size: 1.2em;
     }
   }
   
   @media (max-width: 480px) {
     .proses-layanan h2 {
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
   
     .proses-item h3 {
