@@ -153,6 +153,7 @@
 }
 .hero-text img.text-image-square {
     margin-left:15px;
+    padding-top:55px;
     display: block;
     height: 200px;
     width: auto;
