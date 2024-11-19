@@ -118,7 +118,7 @@ img.text-image-square {
 /* Responsive Design */
 @media (max-width: 768px) {
     #promo-button img {
-        height: 145px; 
+        height: 125px; 
     }
     .footer-container {
         flex-direction: column;
