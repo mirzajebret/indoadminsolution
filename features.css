@@ -83,11 +83,12 @@
     }
   
     .proses-item h3 {
-      font-size: 1.2em;
+      font-size: 0.9em;
     }
   
     .proses-item p {
-      font-size: 0.9em;
+      /* font-size: 0.9em; */
+      display:none;
     }
   }
   
