@@ -80,10 +80,12 @@
   @media (max-width: 480px) {
     .proses-layanan h2 {
       font-size: 1.5em;
+      margin-bottom: 0;
     }
   
     .proses-item h3 {
       font-size: 0.9em;
+      margin-bottom: 0;
     }
   
     .proses-item p {
