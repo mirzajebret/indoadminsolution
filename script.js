@@ -192,13 +192,3 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', goToPrev);
     nextButton.addEventListener('click', goToNext);
 });
-
-const header = document.getElementById("header");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) {
-    header.classList.add("scrolled"); 
-  } else {
-    header.classList.remove("scrolled"); 
-  }
-});

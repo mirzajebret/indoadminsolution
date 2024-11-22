@@ -1,0 +1,143 @@
+/* Hero Section */
+.ias-hero-carousel {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.ias-hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.ias-hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.ias-hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  max-width: 50%;
+  transform: translateY(-50%);
+}
+
+.ias-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.ias-hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ias-hero-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff5722;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.ias-hero-btn:hover {
+  background-color: #BD330A;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .ias-hero-content {
+    text-align: center;
+      bottom: 15%;
+      max-width: 80%;
+  }
+
+  .ias-hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .ias-hero-content p {
+      font-size: 1rem;
+  }
+
+  .ias-hero-btn {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ias-hero-content h1 {
+      font-size: 1.5rem;
+  }
+
+  .ias-hero-content p {
+      font-size: 0.9rem;
+  }
+
+  .ias-hero-btn {
+      font-size: 0.8rem;
+      padding: 0.6rem 1rem;
+  }
+}
+
+
+
+  /* General Slider Container */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f4f4; /* Optional: Adds a background color */
+  }
+  
+  /* The track that holds all the slides */
+  .slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  /* Each individual slide */
+  .slide {
+    flex: 0 0 auto;  /* Prevents the slide from shrinking or expanding */
+    width: 250px;    /* Set to the width of your images */
+    height: 100px;   /* Set to the height of your images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensures the images fit within their containers */
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Infinite scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Optional: Adding a transition effect for smoother sliding */
+  .slider:hover .slide-track {
+    animation-play-state: paused;
+  }
+  

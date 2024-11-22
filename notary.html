@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="layanan.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="hero-carousel.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +17,15 @@
 <body>
     <!-- Header -->
     <div id="header"></div>
-    <section class="hero">
-        <div class="hero-img"><img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/Screenshot%202024-11-05%20154255.jpg?raw=true" alt=""></div>
-        <div class="hero-text">
-            <h1>Layanan Kenotariatan & Pertanahan</h1>
-            <p>Kami menyediakan berbagai layanan kenotariatan dan pertanahan yang cepat, tepat, dan terpercaya.</p>
+    <div id="ias-hero-carousel" class="ias-hero-carousel">
+        <div class="ias-hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1603796846097-bee99e4a601f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="ias-hero-content">
+                <h1>Layanan Kenotariatan</h1>
+                <p>Kami membantu Anda mengurus dokumen-dokumen penting dengan mudah dan cepat.</p>
+                <a href="#legalitas" class="ias-hero-btn">Hubungi Kami</a>
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="https://i.ibb.co.com/CwdDw7P/logo-INDOADMINSOLUTIONS.png" alt="Logo Notaris Havis Akbar">
-        </div>
-    </section> 
+    </div>
     <!-- Kenotariatan Section -->
     <section class="service-page" id="layanan-notpat">
         <div class="service-banner">
@@ -33,226 +33,296 @@
             <p class="banner-description">Dapatkan semua layanan PPAT yang Anda butuhkan, mulai dari Akta Pemberian Hak Tanggungan hingga verifikasi legalitas properti.</p>
             <a href="#" class="cta-banner-button">Hubungi Kami Sekarang</a>
         </div>
-        <h3 class="subheading">LAYANAN KENOTARIATAN</h3>      
-
-        <div class="service-cards">
-            <div class="card">
-         
-                <h2>Waarmerking/Register</h2>
-                <p>Proses pengesahan atau legalisasi dokumen tertentu.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Legalisasi</h2>
-                <p>Proses pengesahan dokumen melalui Notaris.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pembuatan Akta Kuasa</h2>
-                <p>Penyusunan akta yang memberikan kuasa tertentu kepada pihak ketiga.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pembuatan SKMHT</h2>
-                <p>Surat Kuasa Membebankan Hak Tanggungan.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pengikatan Jual Beli</h2>
-                <p>Perjanjian awal untuk transaksi jual beli properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Perjanjian Kerjasama Antar Perusahaan</h2>
-                <p>Pembuatan akta perjanjian kerjasama antara dua perusahaan atau lebih.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Perjanjian Kerjasama Usaha</h2>
-                <p>Pembuatan akta perjanjian kerjasama usaha.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Perjanjian Kawin</h2>
-                <p>Perjanjian pra-nikah yang mengatur hak dan kewajiban kedua belah pihak.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Akta Perjanjian Sewa Menyewa</h2>
-                <p>Pembuatan akta perjanjian untuk sewa-menyewa properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Fotocopy Sesuai Aslinya/Legalisir</h2>
-                <p>Pengurusan legalisir fotokopi yang sesuai dengan dokumen asli.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Layanan Kenotariatan Lainnya</h2>
-                <p>Berbagai layanan kenotariatan lainnya untuk kebutuhan legal Anda.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-        </div>
-
+        <h3 class="subheading2">LAYANAN KENOTARIATAN</h3>      
+        <div class="services-container2">
+            <div class="service-list2">
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Waarmerking/Register</h4>
+                        <p>Proses pengesahan atau legalisasi dokumen tertentu.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Legalisasi</h4>
+                        <p>Proses pengesahan dokumen melalui Notaris.</p>
+                    </div>
+                </div>
         
-        <h3 class="subheading">LAYANAN PERTANAHAN</h3>      
-        <div class="service-cards">
-            <div class="card">
-                <h2>Pembuatan APHT</h2>
-                <p>Akta Pemberian Hak Tanggungan.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Akta Jual Beli</h2>
-                <p>Akta jual beli untuk transaksi properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Akta Pembagian Hak Bersama</h2>
-                <p>Akta untuk pembagian hak properti secara bersama-sama.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Akta Hibah</h2>
-                <p>Akta hibah untuk transfer kepemilikan properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Akta Waris</h2>
-                <p>Pembuatan akta waris untuk distribusi harta kepada ahli waris.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Akta Tukar-Menukar</h2>
-                <p>Akta tukar-menukar kepemilikan properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Akta Inbreng</h2>
-                <p>Akta penyertaan modal dengan aset bukan uang.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Layanan pertanahan Lainnya</h2>
-                <p>Berbagai layanan PPAT lainnya untuk kebutuhan legal Anda.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-            </div>
-            <h3 class="subheading">LAYANAN LAINNYA</h3> 
-            <div class="service-cards"> 
-            <div class="card">
-                <h2>Pengecekan Sertifikat</h2>
-                <p>Proses verifikasi legalitas sertifikat properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pemecahan Sertifikat</h2>
-                <p>Proses pemecahan sertifikat tanah atau properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pensertifikatan Tanah Adat</h2>
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <p>Proses pendaftaran dan sertifikasi tanah adat.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pengurusan Perijinan Pengadilan Negeri</h2>
-                <p>Pengurusan berbagai perizinan melalui Pengadilan Negeri.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pengurusan Roya</h2>
-                <p>Proses penghapusan hak tanggungan di sertifikat.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Balik Nama Sertifikat</h2>
-                <p>Pengurusan balik nama pada sertifikat properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pembuatan Perijinan Perusahaan</h2>
-                <p>Pengurusan izin-izin untuk perusahaan.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Perpanjangan Sertifikat</h2>
-                <p>Proses perpanjangan masa berlaku sertifikat.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pensertifikatan Tanah Negara</h2>
-                <p>Proses sertifikasi tanah yang dimiliki negara.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Penggantian Sertifikat Hilang</h2>
-                <p>Penerbitan sertifikat baru sebagai pengganti sertifikat yang hilang.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Pengurusan Perpajakan</h2>
-                <p>Pengurusan berbagai dokumen perpajakan terkait properti.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pengurusan OSS/NIB/KBLI</h2>
-                <p>Proses pendaftaran NIB dan KBLI untuk perusahaan melalui OSS.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <img src="https://cdn-icons-png.freepik.com/256/12948/12948429.png?uid=R7982040&ga=GA1.1.1696985706.1721189012&semt=ais_hybrid" class="badge-icon" alt="Badge Icon">
-                <h2>Pembuatan NPWP</h2>
-                <p>Pembuatan Nomor Pokok Wajib Pajak.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
-            </div>
-    
-            <div class="card">
-                <h2>Jasa Pengurusan Perizinan Lainnya</h2>
-                <p>Layanan tambahan terkait pengurusan berbagai izin.</p>
-                <a href="#" class="cta-service-button"> <span class="fab fa-whatsapp"></span>&nbsp&nbsp;Hubungi Kami →</a>
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pembuatan Akta Kuasa</h4>
+                        <p>Penyusunan akta yang memberikan kuasa tertentu kepada pihak ketiga.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pembuatan SKMHT</h4>
+                        <p>Surat Kuasa Membebankan Hak Tanggungan.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pengikatan Jual Beli</h4>
+                        <p>Perjanjian awal untuk transaksi jual beli properti.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Perjanjian Kerjasama Antar Perusahaan</h4>
+                        <p>Pembuatan akta perjanjian kerjasama antara dua perusahaan atau lebih.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-people-arrows"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Akta Hibah</h4>
+                        <p>Proses pemberian hibah atau hadiah secara resmi melalui akta notaris.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Akta Waris</h4>
+                        <p>Pembuatan akta yang menyatakan pembagian harta warisan.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Akta Tukar-Menukar</h4>
+                        <p>Perjanjian pertukaran barang atau properti yang dibuat secara sah.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pengecekan Sertifikat</h4>
+                        <p>Proses pengecekan legalitas sertifikat tanah atau properti.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Roya</h4>
+                        <p>Proses penghapusan atau pembatalan hak tanggungan pada sertifikat.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Balik Nama Sertifikat</h4>
+                        <p>Proses perubahan nama pemilik pada sertifikat tanah atau properti.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pemecahan Sertifikat</h4>
+                        <p>Proses pemecahan sertifikat tanah menjadi beberapa bagian.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Perpanjangan Sertifikat</h4>
+                        <p>Proses perpanjangan masa berlaku sertifikat tanah atau properti.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Penggantian Sertifikat Hilang</h4>
+                        <p>Proses penggantian sertifikat yang hilang atau rusak.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pensertipikatan Tanah Adat</h4>
+                        <p>Proses penerbitan sertifikat atas tanah adat yang belum terdaftar.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-archive"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pensertipikatan Tanah Negara</h4>
+                        <p>Proses penerbitan sertifikat untuk tanah negara yang belum terdaftar.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pengurusan Perpajakan</h4>
+                        <p>Proses pengurusan pajak yang terkait dengan transaksi atau properti.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pengurusan Perijinan Pengadilan Negeri</h4>
+                        <p>Proses pengajuan izin melalui pengadilan negeri untuk keperluan legalitas.</p>
+                    </div>
+                </div>
+        
+                <div class="service-item2">
+                    <div class="service-icon2">
+                        <i class="fas fa-business-time"></i>
+                    </div>
+                    <div class="service-info2">
+                        <h4>Pembuatan Perijinan Perusahaan</h4>
+                        <p>Pembuatan izin usaha atau perijinan lainnya untuk perusahaan.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <h3 class="subheading2">LAYANAN PERTANAHAN</h3>      
+<div class="services-container2">
+    <div class="service-list2">
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Pembuatan SKMHT</h4>
+                <p>Surat Kuasa Membebankan Hak Tanggungan untuk keperluan kredit properti.</p>
+            </div>
+        </div>
+        
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-file-signature"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Pembuatan APHT</h4>
+                <p>Akta Pengikatan Hak Tanggungan untuk jaminan kredit.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta Jual Beli</h4>
+                <p>Pembuatan akta untuk transaksi jual beli properti atau tanah.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-gift"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta Hibah</h4>
+                <p>Proses pemberian hibah atau hadiah tanah atau properti melalui akta notaris.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta Pembagian Hak Bersama</h4>
+                <p>Proses pembagian hak bersama atas suatu properti atau tanah.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-gavel"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta Waris</h4>
+                <p>Pembuatan akta untuk pembagian warisan atas properti atau tanah.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-random"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta Tukar Menukar</h4>
+                <p>Perjanjian pertukaran properti atau tanah melalui akta notaris.</p>
+            </div>
+        </div>
+    
+        <div class="service-item2">
+            <div class="service-icon2">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="service-info2">
+                <h4>Akta PPAT Lainnya</h4>
+                <p>Pembuatan akta yang berhubungan dengan transaksi pertanahan lainnya yang sah di mata hukum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     </section>
 
     <!-- Footer -->

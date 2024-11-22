@@ -2,7 +2,7 @@
 
 /* Header */
 #header {
-  background:rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
   padding: 20px 5%;
   position: sticky;
   top: 0;
@@ -11,10 +11,6 @@
   backdrop-filter: blur(10px); 
 
 }
-#header.scrolled {
-  background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
-}
-
 .header-logo {
   display: flex;
   align-items: center;

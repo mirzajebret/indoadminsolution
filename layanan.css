@@ -139,7 +139,7 @@
     background-color: #1ebe5f; 
 }
 
-.subheading {
+.subheading2 {
     padding-top: 40px;
     font-weight: 600;
     text-align: center; 
@@ -148,7 +148,7 @@
     position: relative; 
 }
 
-.subheading::after {
+.subheading2::after {
     content: '';
     display: block;
     width: 50%; /* Width of the underline */
@@ -229,4 +229,82 @@
     display: block; 
     }
  
+}
+
+/* STYLE 2 */
+
+.services-container2 {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    background: #fff;
+}
+
+.subheading2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.service-list2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom pada layar yang lebih besar */
+    gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .service-list2 {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar medium */
+    }
+}
+
+@media (max-width: 900px) {
+    .service-list2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+    }
+}
+
+@media (max-width: 600px) {
+    .service-list2 {
+        grid-template-columns: 1fr; /* 1 kolom pada layar sangat kecil (mobile) */
+    }
+}
+
+.service-item2 {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item2:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon2 {
+    font-size: 3rem;
+    color: #004b8d;
+    margin-right: 20px;
+}
+
+.service-info2 h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.service-info2 p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+
+.fas {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-right: 15px;
 }

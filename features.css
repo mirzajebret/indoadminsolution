@@ -9,7 +9,7 @@
     padding-bottom:20px;
   }
   .proses-layanan .container {
-    max-width: 1800px;
+    max-width: 1750px;
     margin: 0 auto;
     text-align: center;
   }
@@ -113,8 +113,8 @@
     padding: 40px 20px;
 }
 
-/* Subheading Styling */
-.subheading {
+/* subheading2 Styling */
+.subheading2 {
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
@@ -123,7 +123,7 @@
     position: relative;
 }
 
-.subheading::after {
+.subheading2::after {
     content: '';
     display: block;
     width: 50px;
