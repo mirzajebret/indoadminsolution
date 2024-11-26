@@ -39,7 +39,6 @@
 }
 
 .service-page h1 {
-    
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -61,6 +60,7 @@
 }
 
 .card {
+    
     position: relative; 
     text-align: left;
     height: auto;
@@ -164,6 +164,7 @@
     text-align: center;
     border-radius: 10px; 
     margin-bottom: 40px; 
+    
 }
 
 .banner-heading {
@@ -254,23 +255,7 @@
     gap: 30px;
 }
 
-@media (max-width: 1200px) {
-    .service-list2 {
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar medium */
-    }
-}
 
-@media (max-width: 900px) {
-    .service-list2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
-    }
-}
-
-@media (max-width: 600px) {
-    .service-list2 {
-        grid-template-columns: 1fr; /* 1 kolom pada layar sangat kecil (mobile) */
-    }
-}
 
 .service-item2 {
     border-radius: 10px;
@@ -307,4 +292,42 @@
     font-size: 2rem;
     color: #ff5722;
     margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+    .service-list2 {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar medium */
+    }
+}
+
+@media (max-width: 900px) {
+    .service-list2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+        gap: 5px;
+    }
+    .service-icon2 {
+        display:none;
+    }
+    .service-item2 {
+        
+        border: 1px solid #ffcc00;
+        padding: 5px;
+        border-radius: 0;
+    }
+    .service-info2 p{
+        display: none;
+    }
+
+    .service-info2{
+        margin: 0 auto;
+    }
+    .service-page {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-list2 {
+        grid-template-columns: repeat(2, 1fr); /* 1 kolom pada layar sangat kecil (mobile) */
+    }
 }
