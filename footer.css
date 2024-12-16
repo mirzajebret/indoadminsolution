@@ -91,39 +91,27 @@ img.text-image-square {
 
 #whatsapp-button {
     position: fixed;
-    bottom: 1px;
-    right: 1px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1000;
+
   }
   
   #whatsapp-button img {
-    height: 85px; 
-    max-width: 100%;
-    object-fit: cover; 
-    transition: transform 0.3s ease; 
+    height: 60px;
+    width: auto;
   }
-#promo-button {
-    position: fixed;
-    bottom: 70px;
-    right: 1px;
-  }
-  
-  #promo-button img {
-    height: 195px; 
-    max-width: 100%;
-    object-fit: cover; 
-    transition: transform 0.3s ease; 
-  }
-  
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #promo-button img {
-        height: 125px; 
-    }
     .footer-container {
         flex-direction: column;
     }
+
     #whatsapp-button img {
-        height: 75px;
+        height: 13vw;
     }
 }
