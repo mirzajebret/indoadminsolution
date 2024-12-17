@@ -22,17 +22,31 @@
   z-index: 1;
 }
 
+.ias-hero-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent orange */
+  z-index: -1;
+}
+
+
 .ias-hero-content {
   position: absolute;
   top: 50%;
   left: 10%;
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
   max-width: 50%;
   transform: translateY(-50%);
 }
 
 .ias-hero-content h1 {
+  color: #ffe600;
+  /* text-shadow: none; */
   font-size: 3.5rem;
   margin-bottom: 1rem;
   font-weight:600;
