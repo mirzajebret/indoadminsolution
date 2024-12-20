@@ -73,6 +73,7 @@
 /* HEROUP Section */
 .heroup-wrapper {
   width: 100%;
+  padding-top: 50px;
   height: 480px;
   text-align: center;
   margin: 0;
