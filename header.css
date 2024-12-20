@@ -23,7 +23,8 @@
 }
 
 .header-logo img.text-image {
-  height: 15px;
+  filter: invert(1);
+  height: 12px;
   margin-right: 15px;
 }
 
