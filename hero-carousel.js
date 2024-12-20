@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide);
 
     // Ganti slide setiap 5 detik
-    setInterval(nextSlide, 2000000);
+    setInterval(nextSlide, 30000);
 
     // Variabel untuk menyimpan posisi sentuhan
     let startX = 0;
