@@ -1,16 +1,17 @@
 /* Hero Section */
 .ias-hero-carousel {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
 .ias-hero-slide {
   position: absolute;
-  top: -130px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 800px;
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -20,6 +21,7 @@
 .ias-hero-slide.active {
   opacity: 1;
   z-index: 1;
+  height: 100%; /* Ensure the height matches the background */
 }
 
 .ias-hero-slide::before {
@@ -29,7 +31,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.3); /* Semi-transparent overlay */
+  background: linear-gradient(to top right, rgba(0, 4, 255, 0.2), rgba(255, 255, 0, 0.3)); /* Magenta-yellow gradient overlay */
   z-index: -1;
 }
 
@@ -41,6 +43,8 @@
   text-align: center;
   color: black;
   width: 100%;
+  max-height: 100%; 
+  overflow: hidden;
 }
 
 .ias-hero-content h1 {
@@ -63,6 +67,7 @@
   text-decoration: none;
   font-size: 1rem;
   border-radius: 25px;
+  font-weight: 600;
   transition: background-color 0.3s;
 }
 
@@ -73,10 +78,9 @@
 /* HEROUP Section */
 .heroup-wrapper {
   width: 100%;
-  padding-top: 50px;
-  height: 480px;
   text-align: center;
   margin: 0;
+  height: auto; /* Adjust height to prevent overflow */
 }
 
 .heroup-container {
@@ -112,16 +116,17 @@
 .heroup-image {
   width: 20%;
   margin: 0 auto;
-  padding-bottom: 5px;
 }
 
 .heroup-image img {
   width: 100%;
 }
+.heroup-image video {
+  width: 70%;
+}
 
 .heroup-title {
   font-size: 2.5rem;
-  font-weight: 400;
   color: #222;
   padding-bottom: 5px;
 }
@@ -129,9 +134,12 @@
 .heroup-description {
   font-size: 1rem;
   text-align: center;
-  color: #535353;
+  color: #fff;
   max-width: 700px;
   margin: auto;
+  font-weight: 500;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Added text shadow */
 }
 
 .heroup-under {
@@ -149,7 +157,7 @@
 .hubungi-button {
   display: inline-block;
   background: linear-gradient(to right, red, rgb(255, 208, 0)); 
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
   font-weight: 600;
   padding: 10px 25px;
@@ -159,7 +167,7 @@
 }
 
 /* Responsif */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .heroup-image {
     width: 30%;
   }
@@ -231,8 +239,6 @@
     width: 50%;
   }
 }
-
-
 
 /* General Slider Container */
 .slider {

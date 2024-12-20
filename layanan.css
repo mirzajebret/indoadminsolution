@@ -158,41 +158,65 @@
 }
 
 .service-banner {
-    background: linear-gradient(90deg, #BD330A, #ff5722, #BD330A);
-    color: white; 
-    padding: 40px 20px; 
+    background: linear-gradient(135deg, #004b8d, #0073e6);
+    color: white;
+    padding: 60px 30px;
     text-align: center;
-    border-radius: 10px; 
-    margin-bottom: 40px; 
-    
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-banner:hover {
+    transform: translateY(-5px);
 }
 
 .banner-heading {
-    font-size: 2rem; 
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 10px; 
+    margin-bottom: 15px;
 }
 
 .banner-description {
-    font-size: 1.1rem; 
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
 }
 
 .cta-banner-button {
-    font-size: 1.2rem; 
-    background-color: white;
-    color: #ff5722; 
-    padding: 10px 25px;
+    font-size: 1.2rem;
+    background-color: #ffcc00;
+    color: #004b8d;
+    padding: 15px 30px;
     text-transform: uppercase;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-banner-button:hover {
-    background-color: #ff7043;
-    color: white; 
+    background-color: #ff9900;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .service-banner {
+        padding: 40px 20px;
+    }
+
+    .banner-heading {
+        font-size: 2rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+    }
+
+    .cta-banner-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 1020px) {
@@ -251,42 +275,41 @@
 
 .service-list2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom pada layar yang lebih besar */
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
 }
 
-
-
 .service-item2 {
+    background: #f9f9f9;
     border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .service-item2:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-icon2 {
     font-size: 3rem;
-    color: #004b8d;
-    margin-right: 20px;
+    color: #0073e6;
+    margin-bottom: 15px;
 }
 
 .service-info2 h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .service-info2 p {
     font-size: 1rem;
-    color: #7f8c8d;
+    color: #666;
 }
-
 
 .fas {
     font-size: 2rem;
@@ -296,41 +319,51 @@
 
 @media (max-width: 1200px) {
     .service-list2 {
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar medium */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for medium screens */
+    }
+    .service-info2 h4 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+    .service-info2 p {
+        font-size: 0.9rem; /* Smaller font size */
     }
 }
 
 @media (max-width: 900px) {
     .service-list2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 kolom pada layar kecil */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns for small screens */
         gap: 5px;
     }
     .service-icon2 {
-        display:none;
-    }
-    .service-item2 {
-        
-        border: 1px solid #ffcc00;
-        padding: 5px;
-        border-radius: 0;
-    }
-    .service-info2 p{
         display: none;
     }
-
-    .service-info2{
+    .service-item2 {
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .service-info2 p {
+        display: none;
+    }
+    .service-info2 {
         margin: 0 auto;
     }
     .service-page {
         padding: 0;
     }
-      .service-banner{
-        border-radius: 0; 
+    .service-banner {
+        border-radius: 0;
+    }
+    .service-info2 h4 {
+        font-size: 1rem; /* Smaller font size */
     }
 }
 
 @media (max-width: 600px) {
     .service-list2 {
-        grid-template-columns: repeat(2, 1fr); /* 1 kolom pada layar sangat kecil (mobile) */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust columns for very small screens */
+    }
+    .service-info2 h4 {
+        font-size: 0.9rem; /* Smaller font size */
     }
 }

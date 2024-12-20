@@ -22,7 +22,7 @@
   margin-top: 5px;
 }
 
-.header-logo img.text-image {
+.text-image {
   filter: invert(1);
   height: 12px;
   margin-right: 15px;
@@ -79,6 +79,9 @@
         padding: 10px 0 30px 0 ;
         border-radius: 0 0 10px 10px;
         background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
+      }
+      .text-image {
+        height: 9px;
       }
       
       .nav-links.active {
