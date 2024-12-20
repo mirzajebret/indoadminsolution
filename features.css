@@ -1,286 +1,250 @@
-
 /* Style Umum untuk Proses Layanan */
 .proses-layanan {
-    padding: 30px 30px 0 30px;
-  }
-  .proses-item img{
-    filter: invert(100%);
-    width:50px;
-    padding-bottom:20px;
-  }
-  .proses-layanan .container {
-    max-width: 1750px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .proses-layanan h2 {
-    font-size: 2em;
-    font-weight:600;
-    margin-bottom: 20px;
-    color: #000;
-    text-align: center;
-  }
-  .wadah-proses{
-    
-    border-radius:25px;
-    padding:20px ;
-    background-color: #ff5722;
-  }
-  /* Banner dengan empat item secara horizontal */
-  .proses-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
+  padding: 0 30px 0 30px;
+}
+.proses-item img {
+  filter: invert(100%);
+  width: 50px;
+}
+.proses-layanan .container {
+  max-width: 1750px;
+  margin: 0 auto;
+  text-align: center;
+}
+.proses-layanan h2 {
+  padding: 10px 0;
+  font-size: 2em;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+.wadah-proses {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 700px;
+}
+/* Banner dengan empat item secara horizontal */
+.proses-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.proses-item {
+  padding: 20px;
+  width: 23%;
+  text-align: center;
+}
+.proses-item h3 {
+  font-size: 1.3em;
+  color: #fff;
+}
+.proses-item p {
+  font-size: 1em;
+  color: #fff;
+}
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 1200px) {
   .proses-item {
-    padding: 20px;
-    width: 23%; 
-    text-align: center;
+    width: 48%; /* Dua item dalam satu baris */
   }
-  
+  .proses-item img {
+    width: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .proses-item {
+    width: 45%; /* Satu item per baris */
+  }
+  .proses-item img {
+    width: 40px;
+  }
+  .proses-layanan h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 480px) {
+  .proses-item {
+    padding: 0px;
+  }
+  .proses-layanan h2 {
+    font-size: 1.5em;
+  }
   .proses-item h3 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
-    color: #fff;
-
+    font-size: 0.9em;
+    margin-bottom: 0;
   }
-  
   .proses-item p {
-    font-size: 1em;
-    color: #fff;
+    display: none;
   }
-  
-
-  
-  /* Responsif untuk layar lebih kecil */
-  @media (max-width: 1200px) {
-    .proses-item {
-      width: 48%; /* Dua item dalam satu baris */
-    }
-
-    .proses-item img{
-      width:60px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .proses-item {
-      width: 45%; /* Satu item per baris */
-      margin-bottom: 20px;
-    }
-    .proses-item img{
-      width:40px;
-    }
-    .proses-layanan h2 {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .proses-item {
-      padding: 0px;
-    }
-    .proses-layanan h2 {
-      font-size: 1.5em;
-      margin-bottom: 15;
-    }
-  
-    .proses-item h3 {
-      font-size: 0.9em;
-      margin-bottom: 0;
-    }
-  
-    .proses-item p {
-      /* font-size: 0.9em; */
-      display:none;
-    }
-  }
-  
-
+}
 
 /* General Section Styling */
-.testimonials-section, .faq-section{
-    padding: 40px 20px;
-    margin: 20px 0;
-    max-width: 1400px;
-    margin: 10px auto 0;
+.testimonials-section, .faq-section {
+  padding: 40px 20px;
+  margin: 20px 0;
+  max-width: 1400px;
+  margin: 10px auto 0;
 }
-.blog-sections{
-    background-color: #F5F5F7;
-    padding: 40px 20px;
+.blog-sections {
+  background-color: #F5F5F7;
+  padding: 40px 20px;
 }
 
 /* subheading2 Styling */
 .subheading2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
 }
-
 .subheading2::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #ff5722;
-    margin: 10px auto 0;
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff5722;
+  margin: 10px auto 0;
 }
 
 /* Testimonials Section */
 .testimonials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
 .testimonial-card {
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.3s;
-    flex: 1;
-    margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  flex: 1;
+  margin: 10px;
 }
-
 .testimonial-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-    font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
 }
-
 .testimonial-card span {
-    font-size: 0.9rem;
-    color: #777;
-    font-weight: 500;
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
 }
 
 /* Blog Section */
 .blog-section {
-    max-width: 1800px;
-    margin: 10px auto 0;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 10px auto 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .blog-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    transition: transform 0.3s;
-    flex: 1;
-    margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+  flex: 1;
+  margin: 10px;
 }
 .blog-card-img {
-    width: 100%;
-    height: auto; 
-    border-radius: 8px; 
-    padding-bottom: 10px;
-    height:200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  height: 200px;
 }
 .blog-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
-
 .blog-card h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
 }
-
 .blog-card p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
 }
-
 .cta-service-button {
-    display: inline-block;
-    font-size: 0.9rem;
-    color: #ff5722;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid #ff5722;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #ff5722;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
-
 .cta-service-button:hover {
-    background-color: #ff5722;
-    color: white;
+  background-color: #ff5722;
+  color: white;
 }
 
 /* FAQ Section */
 .faq-section {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
 .faq-item {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
 }
-
 .faq-question {
-    background: none;
-    border: none;
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-    cursor: pointer;
-    padding: 10px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
 .faq-answer {
-    display: none;
-    padding: 10px 0;
-    font-size: 0.95rem;
-    color: #555;
+  display: none;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  color: #555;
 }
-
 .faq-question:focus + .faq-answer {
-    display: block;
+  display: block;
 }
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
-    .testimonials,
-    .blog-section {
-        justify-content: space-between;
-    }
-
-    .testimonial-card,
-    .blog-card {
-        max-width: 48%;
-    }
+  .testimonials,
+  .blog-section {
+    justify-content: space-between;
+  }
+  .testimonial-card,
+  .blog-card {
+    max-width: 48%;
+  }
 }
-
 @media (min-width: 1024px) {
-    .testimonials,
-    .blog-section {
-        justify-content: space-between;
-    }
-
-    .testimonial-card,
-    .blog-card {
-        max-width: 30%;
-    }
+  .testimonials,
+  .blog-section {
+    justify-content: space-between;
+  }
+  .testimonial-card,
+  .blog-card {
+    max-width: 30%;
+  }
 }

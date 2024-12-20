@@ -107,10 +107,19 @@ p {
     margin-bottom: 15px;
 }
 
-
-
+.responsive-image {
+    width: 50%;
+    height: auto;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
 
 @media (max-width: 768px) {
+    .responsive-image {
+        width: 100%;
+    }
+
     .service-cards {
         flex-direction: column;
         align-items: center;
