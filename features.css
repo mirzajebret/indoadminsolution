@@ -1,7 +1,5 @@
 /* Style Umum untuk Proses Layanan */
-.proses-layanan {
-  padding: 0 30px 0 30px;
-}
+
 .proses-item img {
   filter: invert(100%);
   width: 50px;
