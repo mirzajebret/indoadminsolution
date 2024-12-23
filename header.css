@@ -73,11 +73,12 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 69px; /* Adjust based on header height */
+        top: 59px; /* Adjust based on header height */
         right: 0;
         padding: 10px 0 30px 0 ;
         border-radius: 0 0 10px 10px;
-        background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00);
+        background-color: #fff;
+        /* background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00); */
       }
       .text-image {
         height: 15px;
