@@ -40,7 +40,6 @@ footer {
 
 img.text-image-square {
     margin-bottom:15px;
-    filter: invert(1);
     display: block;
     width: 310px;
 }
