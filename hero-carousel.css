@@ -156,14 +156,14 @@
 
 .hubungi-button {
   display: inline-block;
-  background: linear-gradient(to right, red, rgb(255, 208, 0)); 
+  background-color: #ff5722;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
   font-weight: 600;
-  padding: 10px 25px;
+  padding: 20px 35px;
   font-size: 0.8rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 /* Responsif */

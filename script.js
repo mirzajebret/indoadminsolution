@@ -9,10 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const menuButton = document.querySelector('.menu-button');
         const navLinks = document.querySelector('.nav-links');
+        const dropdown = document.querySelector('.dropdown');
 
         if (menuButton && navLinks) {
             menuButton.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
+            });
+        }
+
+        if (dropdown) {
+            dropdown.addEventListener('click', function() {
+                const dropdownContent = this.querySelector('.dropdown-content');
+                dropdownContent.classList.toggle('active');
             });
         }
 
