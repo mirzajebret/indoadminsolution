@@ -10,7 +10,7 @@
 body {
     position: relative;
     background-image: url('https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/bg/bg-new-test.jpg');
-    background-size: cover;
+    background-size:contain ;
     background-position: center center;
 }
 
@@ -37,7 +37,7 @@ p {
 }
   
 .call-us{
-    background-color: #F5F5F7;
+    background: rgba(255, 255, 255, 0.5);
 }
 .hubungi-kami .card img{
     background-color: #fff;
