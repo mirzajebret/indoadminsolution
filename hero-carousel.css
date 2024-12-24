@@ -245,7 +245,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-color: #f4f4f4; /* Optional: Adds a background color */
+  background-color: #fff; /* Optional: Adds a background color */
 }
 
 .slide-track {
