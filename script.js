@@ -142,7 +142,7 @@ function handleResize() {
 }
 
 function startCarousel() {
-    intervalId = setInterval(showNext, 5000); 
+    intervalId = setInterval(showNext, 2500); 
 }
 
 function pauseCarousel() {
@@ -191,4 +191,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
     prevButton.addEventListener('click', goToPrev);
     nextButton.addEventListener('click', goToNext);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const smallCarouselInner = document.querySelector('.small-carousel-inner');
+    const smallCarouselCards = document.querySelectorAll('.small-carousel-card');
+    const totalSmallCards = smallCarouselCards.length;
+
+    let smallCurrentIndex = 0;
+    let smallCardsToShow = 2;
+
+    function updateSmallCardsToShow() {
+        const width = window.innerWidth;
+        if (width < 768) {
+            smallCardsToShow = 2;
+        } else {
+            smallCardsToShow = 4;
+        }
+    }
+
+    function showNextSmall() {
+        smallCurrentIndex = (smallCurrentIndex + smallCardsToShow) % totalSmallCards;
+        updateSmallCarousel();
+    }
+
+    function showPrevSmall() {
+        smallCurrentIndex = (smallCurrentIndex - smallCardsToShow + totalSmallCards) % totalSmallCards;
+        updateSmallCarousel();
+    }
+
+    function updateSmallCarousel() {
+        const cardWidth = document.querySelector('.small-carousel-card').offsetWidth;
+        const translateX = -smallCurrentIndex * cardWidth;
+        smallCarouselInner.style.transform = `translateX(${translateX}px)`;
+    }
+
+    document.querySelector('.small-carousel-next').addEventListener('click', showNextSmall);
+    document.querySelector('.small-carousel-prev').addEventListener('click', showPrevSmall);
+
+    window.addEventListener('resize', () => {
+        updateSmallCardsToShow();
+        updateSmallCarousel();
+    });
+
+    updateSmallCardsToShow();
+    setInterval(showNextSmall, 3500);
 });
