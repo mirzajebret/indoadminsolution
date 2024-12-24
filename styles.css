@@ -23,7 +23,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(164, 209, 235, 0.3); /* Semi-transparent orange */
+/*     background: rgba(164, 209, 235, 0.3);  */
     z-index: -1;
 }
 
