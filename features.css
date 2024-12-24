@@ -207,6 +207,7 @@
 
 /* FAQ Section */
 .faq-section {
+  background: rgba(255, 255, 255, 0.5);
   max-width: 800px;
   margin: 0 auto;
 }
