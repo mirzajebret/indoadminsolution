@@ -85,13 +85,15 @@ p {
     transition: opacity 0.5s ease, transform 0.5s ease; 
     transform: translateY(20px); 
     opacity: 0; 
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+
     width: 30%;
     border-width: 1px;
     border-style: solid;
     border-color: #c2cacf;
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid gold; /* Add this line */
 }
 .card.visible {
     opacity: 1; 
