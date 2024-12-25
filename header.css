@@ -79,13 +79,15 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
   cursor: pointer;
   padding: 10px 10px 10px 40px;
   color: inherit;
+  width: 100%; /* Add this line */
+  text-align: left; /* Add this line */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 260px;
+  width: 500px; /* Add this line */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -94,7 +96,14 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+}
+
+.dropdown-content a img { /* Add this block */
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .dropdown-content a:hover {

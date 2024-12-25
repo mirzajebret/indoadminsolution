@@ -85,12 +85,8 @@ p {
     transition: opacity 0.5s ease, transform 0.5s ease; 
     transform: translateY(20px); 
     opacity: 0; 
-    background: rgba(255, 255, 255, 0.8);
-
+    background-color: #fff;
     width: 30%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #c2cacf;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid gold; /* Add this line */
@@ -113,6 +109,24 @@ p {
     max-width: 1200px;
     display: block;
     margin: 0 auto;
+}
+
+.single-image {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    height: 70px;
+    margin: 20px auto; /* Center the image horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    object-fit: contain; /* Ensure the image covers the div */
 }
 
 @media (max-width: 768px) {

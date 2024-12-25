@@ -118,8 +118,7 @@ const carouselCards = document.querySelectorAll('.carousel-card');
 const totalCards = carouselCards.length;
 
 let currentIndex = 0;
-let cardsToShow = 3; 
-let intervalId; 
+let cardsToShow = 1; // Show 1 card on wide view
 
 function updateCardsToShow() {
     const width = window.innerWidth;
@@ -128,7 +127,7 @@ function updateCardsToShow() {
     } else if (width < 1025) {
         cardsToShow = 2; // Show 2 cards on medium screens
     } else {
-        cardsToShow = 3; // Show 3 cards on large screens
+        cardsToShow = 1; // Show 1 card on large screens
     }
 }
 
@@ -207,14 +206,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalSmallCards = smallCarouselCards.length;
 
     let smallCurrentIndex = 0;
-    let smallCardsToShow = 2;
+    let smallCardsToShow = 1; // Show 1 card on wide view
 
     function updateSmallCardsToShow() {
         const width = window.innerWidth;
         if (width < 768) {
-            smallCardsToShow = 2;
+            smallCardsToShow = 1; // Show 1 card on small screens
+        } else if (width < 1025) {
+            smallCardsToShow = 2; // Show 2 cards on medium screens
         } else {
-            smallCardsToShow = 4;
+            smallCardsToShow = 1; // Show 1 card on large screens
         }
     }
 
