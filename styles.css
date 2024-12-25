@@ -36,18 +36,14 @@ p {
   font-size: 16px;  
 }
   
-.call-us{
-    background: rgba(255, 255, 255, 0.5);
-}
+
 .hubungi-kami .card img{
-    background-color: #fff;
+    background-color: #2e3646;
     padding:10px;
     position: absolute;
     width: 55px;
     height: auto;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #c2cacf;
+    border: 2px solid gold; /* Add this line */
     top: -30px; 
     left: 50%; 
     transform: translateX(-50%); 
