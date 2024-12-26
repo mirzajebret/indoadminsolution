@@ -79,7 +79,9 @@
     .carousel-card {
         width: calc(100% - 20px); /* Lebar penuh dengan margin kecil */
     }
-
+    .carousel-card img {
+        width: 200px;
+    }
 /*     .carousel-container{
         padding: 50px 0 50px 20px;
     } */

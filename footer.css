@@ -1,5 +1,6 @@
 footer {
-    background: linear-gradient(45deg, #BD330A, #ff5722, #BD330A);
+    /* background: linear-gradient(45deg, #BD330A, #ff5722, #BD330A); */
+    background-color:#2e3646;
     color: white;
     padding: 50px 0;
     font-family: Arial, sans-serif;
@@ -28,7 +29,7 @@ footer {
 .footer-section hr {
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: #ff5722;
     border: none;
     margin-bottom: 15px;
 }
@@ -51,10 +52,10 @@ img.text-image-square {
 
 .social-icons a {
     margin-right: 10px;
-    color: white;
+    color: gold;
     font-size: 20px;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid ;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -65,8 +66,7 @@ img.text-image-square {
 }
 
 .social-icons a:hover {
-    background-color: white;
-    color: #db491c;
+    background-color: black;
 }
 
 .footer-section.links ul {
