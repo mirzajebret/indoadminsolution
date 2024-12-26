@@ -24,51 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        startTypingAnimation();
     }).catch(error => console.error('Error loading header or footer:', error));
 
     startImageCarousel();
 });
 
-function startTypingAnimation() {
-    const texts = [
-        "legalitas",
-        "pembuatan website",
-        "kenotariatan",
-        "pertanahan"
-    ];
-
-    let index = 0;
-    let textIndex = 0;
-    let currentText = "";
-    let isDeleting = false;
-
-    function type() {
-        const displayText = texts[index];
-
-        if (isDeleting) {
-            currentText = displayText.substring(0, textIndex - 1);
-            textIndex--;
-        } else {
-            currentText = displayText.substring(0, textIndex + 1);
-            textIndex++;
-        }
-
-        document.getElementById("animated-text").innerHTML = `Solusi cepat untuk urusan<br> ${currentText} <br> usaha Anda`;
-
-        if (!isDeleting && textIndex === displayText.length) {
-            setTimeout(() => isDeleting = true, 1000); 
-        } else if (isDeleting && textIndex === 0) {
-            isDeleting = false;
-            index = (index + 1) % texts.length; 
-        }
-
-        const typingSpeed = isDeleting ? 30 : 100; 
-        setTimeout(type, typingSpeed);
-    }
-
-    type();
-}
 
 function startImageCarousel() {
     const images = document.querySelectorAll('.hero-image img');
@@ -148,7 +108,7 @@ function handleResize() {
 }
 
 function startCarousel() {
-    intervalId = setInterval(showNext, 1500);
+    intervalId = setInterval(showNext, 2000);
     showNext(); // Initial call to show the first card
 }
 

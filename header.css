@@ -1,6 +1,6 @@
 /* Header */
 #header {
-background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
+  background-color:#2e3646;
   padding: 20px 5%;
   position: sticky;
   top: 0;
@@ -44,11 +44,11 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
   
   .menu-button {
     display: none;
-    color: #000;
+    color: white;
   }
   
   .nav-links a:hover {
-    color: #41444b;
+    color: gold;
   }
   .nav-links.scrolled {
     filter: invert(100%);
@@ -58,7 +58,7 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
     font-family: "Red Hat Display", sans-serif;
     font-weight: 500;
     /* font-style: italic; */
-    color: #000;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     margin: 0 10px;
@@ -73,12 +73,12 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
 
 .dropbtn {
   font-weight: 500;
-  background: none;
+  background-color: #2e3646;
   border: none;
   font-size: 1rem;
   cursor: pointer;
   padding: 10px 10px 10px 40px;
-  color: inherit;
+  color: white;
   width: 100%; /* Add this line */
   text-align: left; /* Add this line */
 }
@@ -86,14 +86,14 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #2e3646;
   width: 500px; /* Add this line */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+ 
   padding: 12px 16px;
   text-decoration: none;
   display: flex; /* Add this line */
@@ -107,7 +107,7 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #2e3646;
 }
 
 .dropdown:hover .dropdown-content {
@@ -115,7 +115,11 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #ddd;
+  background-color: #2e3646; /* Change hover color */
+}
+
+.dropbtn:focus {
+  background-color: #2e3646; /* Change focus color */
 }
 
 @media (max-width: 900px) {
@@ -128,7 +132,7 @@ background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
         right: 0;
         padding: 10px 0 30px 0 ;
         border-radius: 0 0 10px 10px;
-        background-color: #fff;
+        background-color: #2e3646;
         /* background: linear-gradient(45deg, #BD330A, #ff5722, #ffcc00); */
       }
       .text-image {
