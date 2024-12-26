@@ -18,10 +18,14 @@
     width: 100%;
     overflow: hidden;
     margin: auto; 
+    align-items: center;
+    text-align: center;
     
 }
 
 .carousel-inner {
+    padding: 10px;
+    text-align: center;
     align-items: center;
     display: flex;
     transition: transform 0.5s ease; 
@@ -29,8 +33,6 @@
 
 .carousel-card {
     display: block;
-    text-decoration: none;
-    color: inherit; 
     margin: 10px;
     flex: 0 0 auto;     
     text-align: center;
@@ -39,7 +41,8 @@
 
 
 .carousel-card img {
-    width: 300px;
+    max-width: 400px;
+    width: 100%;
     height: auto;
 }
 
@@ -54,11 +57,11 @@
 /* Untuk layar kecil (mobile) */
 @media (max-width: 768px) {
     .carousel-card {
-        width: calc(100% - 20px); /* Lebar penuh dengan margin kecil */
+        
+        width: calc(100% - 10px); /* Lebar penuh dengan margin kecil */
     }
     .carousel-card img {
         width: 100%;
-        max-width: 320px;
     }
 /*     .carousel-container{
         padding: 50px 0 50px 20px;
