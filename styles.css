@@ -127,7 +127,19 @@ p {
     height: 100%;
     object-fit: contain; /* Ensure the image covers the div */
 }
-
+.gold-gradient-line {
+    height: 5px;
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    margin: 0 auto; /* Center the line horizontally */
+    position: relative;
+    top: -2px; /* Adjust to ensure it is exactly between the sections */
+    width: 100%;
+}
+@media (min-height: 900px) {
+.gold-gradient-line{
+    top: -60px; 
+}
+}
 @media (max-width: 768px) {
     .responsive-image {
         width: 100%;
