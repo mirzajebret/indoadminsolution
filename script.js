@@ -132,15 +132,14 @@ function updateCardsToShow() {
 }
 
 function showNext() {
-    currentIndex = (currentIndex + cardsToShow) % totalCards; 
+    carouselCards.forEach((card, index) => {
+        card.classList.remove('active');
+        if (index === currentIndex) {
+            card.classList.add('active');
+        }
+    });
 
-    const cardWidth = document.querySelector('.carousel-card').offsetWidth;
-    const margin = 20; 
-
-    const totalVisibleWidth = (cardWidth + margin) * cardsToShow;
-    const translateX = -((currentIndex * (cardWidth + margin)) + (totalVisibleWidth / 2) - (cardWidth / 2));
-
-    carouselInner.style.transform = `translateX(${translateX}px)`;
+    currentIndex = (currentIndex + 1) % totalCards;
 }
 
 function handleResize() {
@@ -149,7 +148,8 @@ function handleResize() {
 }
 
 function startCarousel() {
-    intervalId = setInterval(showNext, 2500); 
+    intervalId = setInterval(showNext, 1500);
+    showNext(); // Initial call to show the first card
 }
 
 function pauseCarousel() {
