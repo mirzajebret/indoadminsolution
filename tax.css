@@ -1,6 +1,5 @@
 .tax-services {
     padding: 50px 20px;
-    background-color: #f5f5f5;
     text-align: center;
 }
 
@@ -10,14 +9,17 @@
 }
 
 .tax-services h1 {
+    font-weight: 600;
     font-size: 2.5rem;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
 }
-
+.subheading2 {
+    font-weight: 300;
+}
 .tax-services p {
     font-size: 1.2rem;
-    color: #666;
+    color: #fff;
     margin-bottom: 40px;
 }
 
@@ -70,6 +72,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .tax-services .card.half-width {
+        width: 100%;
+    }
+    .tax-services .card.third-width {
+        width: 100%;
+    }
     .tax-services h1 {
         font-size: 2rem;
     }
