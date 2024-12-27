@@ -108,7 +108,7 @@ function handleResize() {
 }
 
 function startCarousel() {
-    intervalId = setInterval(showNext, 2000);
+    intervalId = setInterval(showNext, 2500);
     showNext(); // Initial call to show the first card
 }
 
