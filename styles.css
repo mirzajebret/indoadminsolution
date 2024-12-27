@@ -81,7 +81,7 @@ p {
     transform: translateY(20px); 
     opacity: 0; 
     background-color: #2e3646;
-    width: 30%;
+    width: 18%;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid gold; /* Add this line */
@@ -141,6 +141,7 @@ p {
 }
 }
 @media (max-width: 768px) {
+
     .responsive-image {
         width: 100%;
     }
@@ -192,15 +193,23 @@ p {
 
 }
 
-.tentang-kami-content {
-    max-width: 600px;
-    text-align: left;
-}
+
 
 .tentang-kami-content h2 {
     font-size: 26px;
     color: white;
     margin-bottom: 20px;
+}
+
+.tentang-kami-content img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 280px;
+}
+.tentang-kami-content {
+    max-width: 600px;
+    text-align: justify;
 }
 
 .tentang-kami-content p {
@@ -209,9 +218,41 @@ p {
     line-height: 1.6;
 }
 
-.tentang-kami-image img {
-    max-width: 400px;
-    border-radius: 10px;
+.our-clients-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.our-clients-section h3 {
+    font-size: 2rem;
+    color: white;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clients-logos img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.clients-logos img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .clients-logos img {
+        max-width: 60px;
+    }
+    .clients-logos  {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 768px) {

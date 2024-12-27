@@ -306,3 +306,52 @@ document.addEventListener('DOMContentLoaded', function () {
     initSmallCarousel('carousel-pertanahan');
     initSmallCarousel('carousel-kenotariatan');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    function animateNumber(element) {
+        const target = +element.getAttribute('data-target');
+        // durasi counter full
+        const increment = target / 200; 
+
+        function updateNumber() {
+            const current = +element.innerText;
+            if (current < target) {
+                element.innerText = Math.ceil(current + increment);
+                requestAnimationFrame(updateNumber);
+            } else {
+                element.innerText = target;
+            }
+        }
+
+        updateNumber();
+    }
+
+    function checkNumberAnimation() {
+        const numberElement = document.querySelector('.numberof');
+        if (isElementInViewport(numberElement)) {
+            animateNumber(numberElement);
+            window.removeEventListener('scroll', checkNumberAnimation);
+        }
+    }
+
+    function updateDailyNumber() {
+        const numberElement = document.querySelector('.numberof');
+        const currentNumber = +numberElement.getAttribute('data-target');
+        const randomIncrement = Math.floor(Math.random() * 13) + 3; // Random value between 3 and 15
+        const newNumber = currentNumber + randomIncrement;
+        numberElement.setAttribute('data-target', newNumber);
+        localStorage.setItem('dailyNumber', newNumber);
+        localStorage.setItem('lastUpdate', new Date().toISOString());
+    }
+
+    function checkDailyUpdate() {
+        const lastUpdate = localStorage.getItem('lastUpdate');
+        if (!lastUpdate || new Date(lastUpdate).getDate() !== new Date().getDate()) {
+            updateDailyNumber();
+        }
+    }
+
+    window.addEventListener('scroll', checkNumberAnimation);
+    checkNumberAnimation();
+    checkDailyUpdate();
+});
