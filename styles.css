@@ -37,6 +37,7 @@ p {
 }
   
 
+
 .hubungi-kami .card img{
     background-color: #2e3646;
     padding:10px;
@@ -178,4 +179,53 @@ p {
 .carousel-card.active {
     opacity: 1;
     transform: translateX(0);
+}
+
+.tentang-kami {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    border-bottom: 2px solid gold;
+    border-top: 2px solid gold;
+    background: rgba(46, 54, 70, 0.7); /* Add this line for 0.7 transparency background */
+
+}
+
+.tentang-kami-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.tentang-kami-content h2 {
+    font-size: 26px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tentang-kami-content p {
+    font-size: 15px;
+    color: white;
+    line-height: 1.6;
+}
+
+.tentang-kami-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .tentang-kami {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tentang-kami-content {
+        max-width: 100%;
+    }
+
+    .tentang-kami-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
 }

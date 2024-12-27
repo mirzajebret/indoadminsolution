@@ -161,48 +161,148 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const smallCarouselInner = document.querySelector('.small-carousel-inner');
-    const smallCarouselCards = document.querySelectorAll('.small-carousel-card');
-    const totalSmallCards = smallCarouselCards.length;
+    // Small Carousel 1
+    const smallCarouselInner1 = document.querySelector('.small-carousel-container:nth-of-type(1) .small-carousel-inner');
+    const smallCarouselCards1 = document.querySelectorAll('.small-carousel-container:nth-of-type(1) .small-carousel-card');
+    const totalSmallCards1 = smallCarouselCards1.length;
 
-    let smallCurrentIndex = 0;
-    let smallCardsToShow = 1; // Show 1 card on wide view
+    let smallCurrentIndex1 = 0;
+    let smallCardsToShow1 = 1;
 
-    function updateSmallCardsToShow() {
+    function updateSmallCardsToShow1() {
         const width = window.innerWidth;
         if (width < 768) {
-            smallCardsToShow = 1; // Show 1 card on small screens
+            smallCardsToShow1 = 1;
         } else if (width < 1025) {
-            smallCardsToShow = 2; // Show 2 cards on medium screens
+            smallCardsToShow1 = 2;
         } else {
-            smallCardsToShow = 1; // Show 1 card on large screens
+            smallCardsToShow1 = 1;
         }
     }
 
-    function showNextSmall() {
-        smallCurrentIndex = (smallCurrentIndex + smallCardsToShow) % totalSmallCards;
-        updateSmallCarousel();
+    function showNextSmall1() {
+        smallCurrentIndex1 = (smallCurrentIndex1 + smallCardsToShow1) % totalSmallCards1;
+        updateSmallCarousel1();
     }
 
-    function showPrevSmall() {
-        smallCurrentIndex = (smallCurrentIndex - smallCardsToShow + totalSmallCards) % totalSmallCards;
-        updateSmallCarousel();
+    function showPrevSmall1() {
+        smallCurrentIndex1 = (smallCurrentIndex1 - smallCardsToShow1 + totalSmallCards1) % totalSmallCards1;
+        updateSmallCarousel1();
     }
 
-    function updateSmallCarousel() {
-        const cardWidth = document.querySelector('.small-carousel-card').offsetWidth;
-        const translateX = -smallCurrentIndex * cardWidth;
-        smallCarouselInner.style.transform = `translateX(${translateX}px)`;
+    function updateSmallCarousel1() {
+        const cardWidth = document.querySelector('.small-carousel-container:nth-of-type(1) .small-carousel-card').offsetWidth;
+        const translateX = -smallCurrentIndex1 * cardWidth;
+        smallCarouselInner1.style.transform = `translateX(${translateX}px)`;
     }
 
-    document.querySelector('.small-carousel-next').addEventListener('click', showNextSmall);
-    document.querySelector('.small-carousel-prev').addEventListener('click', showPrevSmall);
+    document.querySelector('.small-carousel-container:nth-of-type(1) .small-carousel-next').addEventListener('click', showNextSmall1);
+    document.querySelector('.small-carousel-container:nth-of-type(1) .small-carousel-prev').addEventListener('click', showPrevSmall1);
+
+    // Small Carousel 2
+    const smallCarouselInner2 = document.querySelector('.small-carousel-container:nth-of-type(2) .small-carousel-inner');
+    const smallCarouselCards2 = document.querySelectorAll('.small-carousel-container:nth-of-type(2) .small-carousel-card');
+    const totalSmallCards2 = smallCarouselCards2.length;
+
+    let smallCurrentIndex2 = 0;
+    let smallCardsToShow2 = 1;
+
+    function updateSmallCardsToShow2() {
+        const width = window.innerWidth;
+        if (width < 768) {
+            smallCardsToShow2 = 1;
+        } else if (width < 1025) {
+            smallCardsToShow2 = 2;
+        } else {
+            smallCardsToShow2 = 1;
+        }
+    }
+
+    function showNextSmall2() {
+        smallCurrentIndex2 = (smallCurrentIndex2 + smallCardsToShow2) % totalSmallCards2;
+        updateSmallCarousel2();
+    }
+
+    function showPrevSmall2() {
+        smallCurrentIndex2 = (smallCurrentIndex2 - smallCardsToShow2 + totalSmallCards2) % totalSmallCards2;
+        updateSmallCarousel2();
+    }
+
+    function updateSmallCarousel2() {
+        const cardWidth = document.querySelector('.small-carousel-container:nth-of-type(2) .small-carousel-card').offsetWidth;
+        const translateX = -smallCurrentIndex2 * cardWidth;
+        smallCarouselInner2.style.transform = `translateX(${translateX}px)`;
+    }
+
+    document.querySelector('.small-carousel-container:nth-of-type(2) .small-carousel-next').addEventListener('click', showNextSmall2);
+    document.querySelector('.small-carousel-container:nth-of-type(2) .small-carousel-prev').addEventListener('click', showPrevSmall2);
 
     window.addEventListener('resize', () => {
-        updateSmallCardsToShow();
-        updateSmallCarousel();
+        updateSmallCardsToShow1();
+        updateSmallCarousel1();
+        updateSmallCardsToShow2();
+        updateSmallCarousel2();
     });
 
-    updateSmallCardsToShow();
-    setInterval(showNextSmall, 3500);
+    updateSmallCardsToShow1();
+    updateSmallCarousel1();
+    updateSmallCardsToShow2();
+    updateSmallCarousel2();
+    setInterval(showNextSmall1, 3500);
+    setInterval(showNextSmall2, 3500);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // ...existing code...
+
+    function initSmallCarousel(containerClass) {
+        const smallCarouselInner = document.querySelector(`.${containerClass} .small-carousel-inner`);
+        const smallCarouselCards = document.querySelectorAll(`.${containerClass} .small-carousel-card`);
+        const totalSmallCards = smallCarouselCards.length;
+
+        let smallCurrentIndex = 0;
+        let smallCardsToShow = 1;
+
+        function updateSmallCardsToShow() {
+            const width = window.innerWidth;
+            if (width < 768) {
+                smallCardsToShow = 1;
+            } else if (width < 1025) {
+                smallCardsToShow = 2;
+            } else {
+                smallCardsToShow = 1;
+            }
+        }
+
+        function showNextSmall() {
+            smallCurrentIndex = (smallCurrentIndex + smallCardsToShow) % totalSmallCards;
+            updateSmallCarousel();
+        }
+
+        function showPrevSmall() {
+            smallCurrentIndex = (smallCurrentIndex - smallCardsToShow + totalSmallCards) % totalSmallCards;
+            updateSmallCarousel();
+        }
+
+        function updateSmallCarousel() {
+            const cardWidth = document.querySelector(`.${containerClass} .small-carousel-card`).offsetWidth;
+            const translateX = -smallCurrentIndex * cardWidth;
+            smallCarouselInner.style.transform = `translateX(${translateX}px)`;
+        }
+
+        document.querySelector(`.${containerClass} .small-carousel-next`).addEventListener('click', showNextSmall);
+        document.querySelector(`.${containerClass} .small-carousel-prev`).addEventListener('click', showPrevSmall);
+
+        window.addEventListener('resize', () => {
+            updateSmallCardsToShow();
+            updateSmallCarousel();
+        });
+
+        updateSmallCardsToShow();
+        updateSmallCarousel();
+        setInterval(showNextSmall, 3500);
+    }
+
+    initSmallCarousel('carousel-pertanahan');
+    initSmallCarousel('carousel-kenotariatan');
 });

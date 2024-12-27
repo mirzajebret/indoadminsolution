@@ -103,9 +103,7 @@
 }
 
 .cta-button:hover {
-    color: #ff5722;
-    background-color: #fff;
-    border: 1px solid #ff5722;
+    background-color: rgb(255, 237, 133);
 }
 
 #animated-text {
