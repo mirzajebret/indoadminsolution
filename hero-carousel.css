@@ -210,7 +210,8 @@
 
 @media (max-width: 480px) {
   .ias-hero-carousel{
-    height: 60vh;
+    height: 50vh;
+    
   }
   .ias-hero-content h1 {
     font-size: 1.5rem;
