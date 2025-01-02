@@ -14,8 +14,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
+    <style>
+         .collapsible {
+            background: none;
+            outline: none;
+            margin: 18px;
+            width: 90%;
+            background-color: rgba(46, 57, 71, 0.8);
+         }
+         .collapsible h3{
+            font-weight: 500;
 
+         }
+        .collapsible h3::after {
+            background-color: transparent;
+
+        }
+        @media (max-width: 768px) {
+            .collapsible {
+                cursor: pointer;
+                text-align: left;
+            }
+
+            .collapsible h3{
+                font-size: 2.1rem;
+            }
+       
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -47,60 +78,124 @@
             <p class="banner-description">Pilih berbagai macam layanan legalitas usaha/perkumpulan/yayasan untuk kebutuhan pribadi maupun bisnis Anda, dengan proses yang cepat, aman, dan Profesional. Kami siap membantu Anda mengurus usaha anda, <br> mulai dari pendaftaran hukum hingga pembuatan akta. Hubungi kami sekarang untuk solusi lengkap dan praktis dalam satu tempat!</p>
             <a href="#" class="cta-banner-button">Hubungi Kami Sekarang</a>
         </div>
-        <section class="pngcardwrapper">
-            <div class="image-gallery">
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTR.png?raw=true" alt="Card 1" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTL.png?raw=true" alt="Card 2" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTPR.png?raw=true" alt="Card 3" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTPL.png?raw=true" alt="Card 4" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_CVR.png?raw=true" alt="Card 5" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_CVL.png?raw=true" alt="Card 6" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_FR.png?raw=true" alt="Card 7" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_FL.png?raw=true" alt="Card 8" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PR.png?raw=true" alt="Card 9" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PL.png?raw=true" alt="Card 10" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_YR.png?raw=true" alt="Card 11" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_YL.png?raw=true" alt="Card 12" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_KR.png?raw=true" alt="Card 13" class="card-image">
-                </a>
-                <a href="https://wa.me/081120027888">
-                    <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_KL.png?raw=true" alt="Card 14" class="card-image">
-                </a>
-            </div>
-        </section>
+        <button class="collapsible"><h3 class="subheading2">Pendirian PT</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- PT -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTR.png?raw=true" alt="Card 1" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTL.png?raw=true" alt="Card 2" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTPR.png?raw=true" alt="Card 3" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PTPL.png?raw=true" alt="Card 4" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <button class="collapsible"><h3 class="subheading2">Pendirian CV</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- CV -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_CVR.png?raw=true" alt="Card 5" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_CVL.png?raw=true" alt="Card 6" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <button class="collapsible"><h3 class="subheading2">Pendirian FIRMA</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- FIRMA -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_FR.png?raw=true" alt="Card 7" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_FL.png?raw=true" alt="Card 8" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <button class="collapsible"><h3 class="subheading2">Pendirian Perkumpulan</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- PERKUMPULAN -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PR.png?raw=true" alt="Card 9" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_PL.png?raw=true" alt="Card 10" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <button class="collapsible"><h3 class="subheading2">Pendirian Yayasan</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- YAYASAN -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_YR.png?raw=true" alt="Card 11" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_YL.png?raw=true" alt="Card 12" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <button class="collapsible"><h3 class="subheading2">Pendirian Koperasi</h3></button>
+        <div class="content">
+            <section class="pngcardwrapper">
+                <div class="image-gallery">
+                    <!-- KOPERASI -->
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_KR.png?raw=true" alt="Card 13" class="card-image">
+                    </a>
+                    <a href="https://wa.me/081120027888">
+                        <img src="https://github.com/mirzajebret/indoadminsolution/blob/main/img/card/CO_KL.png?raw=true" alt="Card 14" class="card-image">
+                    </a>
+                </div>
+            </section>
+        </div>
     </section>
-        
-
-     
-
     <!-- Footer -->
     <div id="footer"></div>
+    <script>
+        // Add script for collapsible sections
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                // Close all other collapsible sections
+                for (var j = 0; j < coll.length; j++) {
+                    if (coll[j] !== this) {
+                        coll[j].classList.remove("active");
+                        coll[j].nextElementSibling.style.display = "none";
+                    }
+                }
+                // Toggle the clicked collapsible section
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
