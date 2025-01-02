@@ -142,7 +142,10 @@
       .nav-links.active {
         display: flex;
       }
-      
+      .dropdown-content {
+        width: 100%;
+      }
+
       .menu-button {
         display: block;
         background: none;
