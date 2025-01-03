@@ -29,6 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
     startImageCarousel();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // ...existing code...
+
+    document.addEventListener('click', function(event) {
+        const nav = document.querySelector('.nav');
+        const navLinks = document.querySelector('.nav-links');
+        if (nav && navLinks && !nav.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // ...existing code...
+});
 
 function startImageCarousel() {
     const images = document.querySelectorAll('.hero-image img');
