@@ -311,10 +311,9 @@
     color: #666;
 }
 
-.fas {
+.icon-notary {
     font-size: 2rem;
     color: gold;
-    margin-right: 15px;
 }
 
 @media (max-width: 1200px) {
