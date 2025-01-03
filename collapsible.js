@@ -39,6 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
         coll[i].nextElementSibling.addEventListener("touchstart", function(event) {
             event.stopPropagation();
         });
+
+        // Prevent touchmove events from closing the collapsible
+        coll[i].addEventListener("touchmove", function(event) {
+            event.stopPropagation();
+        });
+        coll[i].nextElementSibling.addEventListener("touchmove", function(event) {
+            event.stopPropagation();
+        });
     }
 
     window.addEventListener("resize", updateCollapsible);
