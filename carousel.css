@@ -4,6 +4,7 @@
 
 
 .carousel-container {
+    padding: 50px;
     text-align:center;
     position: relative;
     width: 100%; 
@@ -59,8 +60,10 @@
 
 /* Untuk layar kecil (mobile) */
 @media (max-width: 768px) {
+    .carousel-container {
+    padding: 20px;
+    }
     .carousel-card {
-        
         width: calc(100% - 10px); /* Lebar penuh dengan margin kecil */
     }
     .carousel-card img {
