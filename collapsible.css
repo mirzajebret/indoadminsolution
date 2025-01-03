@@ -1,7 +1,6 @@
 .collapsible {
     background-color: #2e3646;
     color: white;
-    cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
@@ -14,12 +13,22 @@
 
 .collapsible p{
     color: gold;
+    display: none;
 }
-
 
 .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background: transparent;
+}
+
+@media (max-width: 768px) {
+    .collapsible p{
+        display: block;
+    }
+    .collapsible {
+        cursor: pointer;
+    }
+
 }
