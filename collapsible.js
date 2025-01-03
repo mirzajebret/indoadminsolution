@@ -1,28 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var coll = document.getElementsByClassName("collapsible");
-    var updateCollapsible = function() {
-        if (window.innerWidth > 768) {
-            for (var i = 0; i < coll.length; i++) {
-                coll[i].classList.remove("active");
-                coll[i].nextElementSibling.style.display = "block";
-                coll[i].style.display = "none";
-            }
-        } else {
-            for (var i = 0; i < coll.length; i++) {
-                coll[i].style.display = "block";
-                coll[i].nextElementSibling.style.display = "none";
-            }
-        }
-    };
-
     for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
-            for (var j = 0; j < coll.length; j++) {
-                if (coll[j] !== this) {
-                    coll[j].classList.remove("active");
-                    coll[j].nextElementSibling.style.display = "none";
-                }
-            }
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
@@ -31,24 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 content.style.display = "block";
             }
         });
-
-        // Prevent touch events from closing the collapsible
-        coll[i].addEventListener("touchstart", function(event) {
-            event.stopPropagation();
-        });
-        coll[i].nextElementSibling.addEventListener("touchstart", function(event) {
-            event.stopPropagation();
-        });
-
-        // Prevent touchmove events from closing the collapsible
-        coll[i].addEventListener("touchmove", function(event) {
-            event.stopPropagation();
-        });
-        coll[i].nextElementSibling.addEventListener("touchmove", function(event) {
-            event.stopPropagation();
-        });
     }
-
-    window.addEventListener("resize", updateCollapsible);
-    updateCollapsible();
 });
