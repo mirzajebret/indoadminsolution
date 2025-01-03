@@ -11,6 +11,9 @@
     margin: 10px 0;
 }
 
+.web-services .card{
+    max-width: 350px;
+}
 .collapsible p{
     color: gold;
     display: none;
