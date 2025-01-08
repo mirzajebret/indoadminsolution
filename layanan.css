@@ -337,8 +337,8 @@
     }
     .service-item2 {
         padding: 20px;
-        border-radius: 10px;
         overflow: hidden;
+        border: 1px solid gold;
     }
     .service-info2 p {
         display: none;
