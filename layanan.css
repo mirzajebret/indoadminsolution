@@ -327,6 +327,12 @@
 }
 
 @media (max-width: 900px) {
+    .services-container2 {
+        padding: 0;
+    }
+    .subheading2 {
+        margin: 0;
+    }
     .service-list2 {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns for small screens */
         gap: 5px;
