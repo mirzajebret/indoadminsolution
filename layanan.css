@@ -279,9 +279,8 @@
 }
 
 .service-item2 {
-    background: #f9f9f9;
-    border: 2px solid #2e3646; /* Add this line */
-
+    background: linear-gradient(203deg, black, transparent);
+    border: 2px solid gold;
     border-radius: 10px;
     padding: 30px;
     text-align: center;
