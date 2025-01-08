@@ -262,10 +262,14 @@
 
 /* Small Carousel */
 .small-carousel-container {
+  
+  width: 100%;
+  /* border-top: 2px solid gold; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
+  margin: 0;
+  padding: 40px 0 20px;
 }
 
 .small-carousel {
@@ -286,7 +290,7 @@
 }
 .small-carousel-card {
   flex: 0 0 50%;
-  height: 70px;
+  /* height: 70px; */
   display: flex;
   align-items: center;
   justify-content: center;

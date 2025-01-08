@@ -188,8 +188,8 @@ p {
     align-items: center;
     justify-content: space-around;
     padding: 50px 20px;
-    border-bottom: 2px solid gold;
     border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
     background: rgba(46, 54, 70, 0.7); /* Add this line for 0.7 transparency background */
 
 }
