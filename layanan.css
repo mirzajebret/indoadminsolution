@@ -302,7 +302,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 10px;
 }
 
 .service-info2 p {
@@ -336,7 +335,7 @@
         display: none;
     }
     .service-item2 {
-        padding: 20px;
+        padding: 20px 5px 20px 5px;
         overflow: hidden;
         border: 1px solid gold;
     }
