@@ -10,21 +10,11 @@
 body {
     position: relative;
     background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/bg/XBBG.PNG?raw=true');
-    background-size:contain ;
+    background-size: contain;
     background-position: center center;
+    backdrop-filter: brightness(1.4); 
 }
 
-/* Pseudo-element with orange filter */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-/*     background: rgba(164, 209, 235, 0.3);  */
-    z-index: -1;
-}
 
 h1 {
   font-size: 36px;  
@@ -44,7 +34,7 @@ p {
     position: absolute;
     width: 55px;
     height: auto;
-    border: 2px solid gold; /* Add this line */
+    border: 2px solid gold; 
     top: -30px; 
     left: 50%; 
     transform: translateX(-50%); 
@@ -88,8 +78,9 @@ p {
     border: 2px solid gold; /* Add this line */
     
 }
-.layanankami h2, .layanankami p{
+.layanankami h2{
     color: #fff;
+    padding: 20px;
 }
 .card.visible {
     opacity: 1; 
@@ -190,7 +181,7 @@ p {
     padding: 50px 20px;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
-    background: rgba(46, 54, 70, 0.7); /* Add this line for 0.7 transparency background */
+    background: rgba(46, 54, 70, 0.7);
 
 }
 
