@@ -92,13 +92,14 @@
 }
 
 .cta-button {
-    font-family: "Red Hat Display", sans-serif; 
+    font-family: "Red Hat Display", sans-serif;
     background-color: gold;
     font-weight: 600;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
+    width: 100%;
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 
