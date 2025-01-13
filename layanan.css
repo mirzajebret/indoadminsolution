@@ -130,8 +130,6 @@
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-
-
 }
 
 .cta-service-button:hover {
@@ -157,24 +155,19 @@
 }
 
 .service-banner {
-    background: linear-gradient(135deg, #004b8d, #0073e6);
+    border: solid 2.5px rgb(236, 192, 47);
+    background: linear-gradient(203deg, rgba(37, 63, 105, 0.6), rgba(42, 58, 84, 1.0));
     color: white;
-    padding: 60px 30px;
+    padding: 30px;
     text-align: center;
-    border-radius: 15px;
-    margin-bottom: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.service-banner:hover {
-    transform: translateY(-5px);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 .banner-heading {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .banner-description {
@@ -185,27 +178,22 @@
 .cta-banner-button {
     font-size: 1.2rem;
     background-color: #ffcc00;
-    color: #004b8d;
+    color: #072a49;
     padding: 15px 30px;
     text-transform: uppercase;
     border-radius: 5px;
     font-weight: 700;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-banner-button:hover {
     background-color: #ff9900;
-    color: white;
 }
 
 @media (max-width: 768px) {
-    .service-banner {
-        padding: 40px 20px;
-    }
 
     .banner-heading {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .banner-description {
@@ -246,9 +234,6 @@
     .service-banner{
         margin-bottom: 0px;
     }
-    .banner-heading{
-        padding-bottom: 20px;
-    }
     .cta-service-button{
     display: block; 
     }
@@ -279,7 +264,7 @@
 }
 
 .service-item2 {
-    background: linear-gradient(203deg, black, transparent);
+    background: linear-gradient(203deg, #2A3A54, transparent);
     border: 2px solid gold;
     border-radius: 10px;
     padding: 30px;
