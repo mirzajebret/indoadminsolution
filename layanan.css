@@ -177,7 +177,7 @@
 
 .cta-banner-button {
     font-size: 1.2rem;
-    background-color: #ffcc00;
+    background: linear-gradient(45deg, #FFD700, #eee2b8, #ffbb00);
     color: #072a49;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -232,7 +232,7 @@
         display: none;
     }
     .service-banner{
-        margin-bottom: 0px;
+        margin-bottom: 15px;
     }
     .cta-service-button{
     display: block; 
@@ -339,9 +339,7 @@
     .service-page {
         padding: 0;
     }
-    .service-banner {
-        border-radius: 0;
-    }
+
     .service-info2 h4 {
         font-size: 1rem; /* Smaller font size */
     }
