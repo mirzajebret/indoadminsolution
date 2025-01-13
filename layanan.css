@@ -9,7 +9,7 @@
 .image-gallery {
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusts column size based on screen width */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
     gap: 20px; 
     max-width: 1400px; 
     width: 100%;
@@ -148,10 +148,10 @@
 .subheading2::after {
     content: '';
     display: block;
-    width: 50%; /* Width of the underline */
-    height: 2px; /* Thickness of the underline */
-    background: gold; /* Color of the underline */
-    margin: 10px auto 0; /* Center the underline */
+    width: 50%; 
+    height: 2px;
+    background: gold; 
+    margin: 10px auto 0; 
 }
 
 .service-banner {
@@ -215,18 +215,18 @@
         }
         .image-gallery {
             padding:0;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts column size based on screen width */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
         }    
         
 }
 
 @media (max-width: 768px) {
     .service-page {
-        padding: 30px; /* Adjust padding */
+        padding: 30px; 
     }
 
     .card {
-        width: 90%; /* Slightly smaller width */
+        width: 90%; 
     }
     .banner-description{
         display: none;
@@ -258,7 +258,7 @@
 
 .service-list2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -301,13 +301,13 @@
 
 @media (max-width: 1200px) {
     .service-list2 {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns for medium screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
     .service-info2 h4 {
-        font-size: 1.2rem; /* Smaller font size */
+        font-size: 1.2rem;
     }
     .service-info2 p {
-        font-size: 0.9rem; /* Smaller font size */
+        font-size: 0.9rem; 
     }
 }
 
@@ -319,7 +319,7 @@
         margin: 0;
     }
     .service-list2 {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns for small screens */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
         gap: 5px;
     }
     .service-icon2 {
@@ -341,15 +341,15 @@
     }
 
     .service-info2 h4 {
-        font-size: 1rem; /* Smaller font size */
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 600px) {
     .service-list2 {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust columns for very small screens */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     }
     .service-info2 h4 {
-        font-size: 0.9rem; /* Smaller font size */
+        font-size: 0.9rem; 
     }
 }
