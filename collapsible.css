@@ -22,6 +22,12 @@
     display: none;
 }
 
+.collapsible-icon {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+}
+
 .content {
     padding: 0 18px;
     display: none;
@@ -33,8 +39,8 @@
     .collapsible p{
         display: block;
     }
-    .collapsible {
-        cursor: pointer;
+    .collapsible-icon {
+        width: 40px;
     }
 
 }
