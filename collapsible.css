@@ -9,6 +9,9 @@
     font-size: 15px;
     text-align: center;
     margin: 10px 0;
+    border-radius: 10px;
+    border: solid 2.5px rgb(236, 192, 47);
+    background: linear-gradient(203deg, #344c74, #253c61);
 }
 
 .web-services .card{
