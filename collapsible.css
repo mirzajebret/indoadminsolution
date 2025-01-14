@@ -1,5 +1,4 @@
 .collapsible {
-    background-color: #2A3A54;
     color: white;
     padding: 18px;
     width: 100%;
@@ -11,7 +10,7 @@
     margin: 10px 0;
     border-radius: 10px;
     border: solid 2.5px rgb(236, 192, 47);
-    background: linear-gradient(203deg, #344c74, #253c61);
+    background: linear-gradient(203deg, #344c74, #253c61, #1b2a4a, #0f1a33);
 }
 
 .web-services .card{
