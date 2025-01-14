@@ -14,12 +14,13 @@
     max-width: 1400px; 
     width: 100%;
   }
+
   .image-gallery p{
-    color: gold;
+    color: #fff;
     text-decoration: underline;
     font-size: larger;
     padding-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
   
   .card-image {
