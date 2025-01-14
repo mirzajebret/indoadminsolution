@@ -13,14 +13,19 @@
     gap: 20px; 
     max-width: 1400px; 
     width: 100%;
-  }
 
-  .image-gallery p{
-    color: #fff;
-    text-decoration: underline;
+  }
+  .service-page .more-info{
+    color: #17202e;
     font-size: larger;
-    padding-bottom: 20px;
+    padding: 15px;
+    font-size: 1.8rem;
     font-weight: 700;
+    background: linear-gradient(45deg, #FFD700, #eee2b8, #ffbb00);
+    text-decoration: none;
+}
+.service-page a{
+    text-decoration: none;
 }
   
   .card-image {
@@ -42,6 +47,7 @@
 
 .service-page {
     padding: 50px;
+    align-items: center;
     text-align: center;
 }
 
