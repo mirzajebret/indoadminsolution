@@ -15,14 +15,14 @@
     width: 100%;
 
   }
-  .service-page .more-info{
-    color: #17202e;
-    font-size: larger;
-    padding: 15px;
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, #FFD700, #eee2b8, #ffbb00);
-    text-decoration: none;
+.service-page .more-info {
+    padding: 0px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation: pulse 1.5s infinite;
 }
 .service-page a{
     text-decoration: none;
@@ -369,5 +369,17 @@
     }
     .service-info2 h4 {
         font-size: 0.9rem; 
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
     }
 }
