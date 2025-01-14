@@ -218,6 +218,10 @@
         font-size: 0.9rem;
         padding: 10px 20px;
     }
+    .service-page .more-info{
+
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 1020px) {
