@@ -111,6 +111,118 @@ const beritaTerkait = [
         `,
         author: "Admin KantorPerizinan.com",
     },
+    {
+        kategori: "LEGALISASI",
+        judul: "Bingung Pilih Pembuatan CV atau PT? Ketahui Perbedaan dan Keuntungannya!",
+        views: "1.2k",
+        img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-BINGUNG-PILIH-CV-ATAU-PT-rgb.jpg",
+        deskripsi: `
+            Memilih bentuk badan usaha yang tepat sangat penting, terutama bagi Anda yang baru memulai usaha atau berencana mengembangkan bisnis.<br>
+            Jika Anda seorang pengusaha atau calon pengusaha yang ingin memulai bisnis di Indonesia, tentu Anda sudah familiar dengan dua bentuk badan usaha yang sering dipilih, yaitu Commanditaire Vennootschap (CV) dan Perseroan Terbatas (PT). Kedua jenis badan usaha ini memiliki karakteristik dan keuntungan masing-masing, namun sering kali orang bingung memilih mana yang lebih cocok untuk usaha mereka. mana yang lebih menguntungkan bagi Anda? <br><br>
+
+            Apa Itu CV?<br>
+            Commanditaire Vennootschap (CV) adalah bentuk usaha yang didirikan oleh dua pihak atau lebih, yang terdiri dari sekutu aktif dan sekutu pasif. Sekutu aktif bertanggung jawab penuh atas pengelolaan dan operasional perusahaan, sementara sekutu pasif hanya berperan sebagai penyetor modal tanpa terlibat dalam pengelolaan usaha. CV lebih fleksibel dalam hal pengelolaan dan struktur modal, serta lebih cocok bagi pengusaha kecil atau menengah yang ingin memulai bisnis dengan modal terbatas.<br>
+
+            Keuntungan Mendirikan CV:<br>
+
+            Proses Pendirian Lebih Cepat dan Murah: Dibandingkan dengan PT, biaya dan waktu yang dibutuhkan untuk mendirikan CV relatif lebih rendah. Anda cukup memiliki dua orang sebagai pendiri dan dokumen pendukung yang diperlukan.<br>
+
+            Tanggung Jawab Terbatas untuk Sekutu Pasif: Sekutu pasif dalam CV hanya bertanggung jawab sebatas modal yang mereka setorkan. Ini membuat risiko mereka terbatas dan tidak terkait langsung dengan operasional perusahaan.<br>
+
+            Kebebasan dalam Pengelolaan Usaha: Pengelolaan bisnis dapat dilakukan oleh sekutu aktif, yang memiliki fleksibilitas untuk mengambil keputusan cepat tanpa terlalu banyak birokrasi.<br><br>
+
+            Apa Itu PT?<br>
+            Perseroan Terbatas (PT) adalah badan usaha yang dimiliki oleh pemegang saham. PT dibentuk berdasarkan perjanjian, dan seluruh modalnya dibagi dalam bentuk saham. Dalam PT, terdapat pemisahan yang jelas antara harta perusahaan dan pemiliknya, yang memberikan perlindungan hukum lebih kuat dibandingkan dengan CV. PT juga memiliki struktur manajemen yang lebih formal, dan biasanya cocok untuk perusahaan yang lebih besar dengan lebih banyak karyawan atau yang ingin menarik investor eksternal.<br>
+
+            Keuntungan Mendirikan PT:<br>
+
+            1. Perlindungan Hukum yang Lebih Kuat: Karena PT adalah badan hukum yang terpisah dari pemiliknya, maka perusahaan dapat memiliki aset dan kewajiban sendiri. Hal ini memberikan perlindungan terhadap kekayaan pribadi pemilik jika terjadi masalah hukum.<br>
+
+            2. Kemampuan Mengajak Investor: PT memungkinkan Anda untuk mengeluarkan saham dan menarik investor. Ini memberikan peluang untuk mengembangkan usaha lebih cepat melalui suntikan modal dari luar.<br>
+
+            3. Kepercayaan Lebih Tinggi di Mata Publik dan Bank: PT biasanya dipandang lebih kredibel, sehingga lebih mudah mendapatkan pinjaman atau modal dari bank atau lembaga keuangan lainnya.<br><br>
+            CV atau PT? Pilih yang Sesuai dengan Kebutuhan Bisnis Anda!<br>
+            Memilih antara mendirikan CV atau PT tergantung pada tujuan dan skala bisnis yang Anda rencanakan. Jika Anda seorang pengusaha kecil atau menengah yang baru memulai usaha dengan modal terbatas, CV bisa menjadi pilihan yang tepat. Biaya yang lebih rendah dan struktur yang lebih fleksibel akan memberi Anda ruang untuk berkembang dengan lebih mudah.<br><br>
+
+            Namun, jika Anda berencana untuk membangun bisnis yang lebih besar atau berencana untuk menarik investor, PT adalah pilihan yang lebih bijak. Dengan perlindungan hukum yang lebih kuat dan kemampuan untuk mengeluarkan saham, PT dapat mendukung pertumbuhan dan ekspansi bisnis yang lebih besar.<br><br>
+
+            Butuh Bantuan dengan Pendirian CV atau PT?<br><br>
+
+            Jika Anda merasa bingung atau butuh bantuan dalam memilih antara CV atau PT, kami di KantorPerizinan.com siap membantu Anda dengan layanan konsultasi dan pengurusan pendirian badan usaha. Tim kami siap memberikan informasi yang jelas dan memandu Anda melalui proses pendirian badan usaha yang sesuai dengan kebutuhan bisnis Anda.<br><br>
+
+            Jangan ragu untuk menghubungi kami dan mulai perjalanan bisnis Anda dengan langkah yang tepat!
+        `,
+        author: "Admin KantorPerizinan.com",
+    },
+    {
+        kategori: "LEGALISASI",
+        judul: "Panduan Lengkap : Syarat & Prosedur Pendirian PT",
+        views: "1.2k",
+        img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-PT.jpg",
+        deskripsi: `
+            Mendirikan Perseroan Terbatas (PT) adalah salah satu pilihan yang tepat bagi pengusaha yang ingin memulai usaha dalam skala yang lebih besar, dengan perlindungan hukum yang jelas dan peluang untuk menarik investor. PT juga memungkinkan Anda untuk mengembangkan usaha lebih cepat, menarik pinjaman dari bank, dan mendapatkan kepercayaan lebih dari masyarakat dan lembaga keuangan. <br><br>
+
+            Jika Anda berencana mendirikan PT, berikut adalah panduan lengkap mengenai syarat dan prosedur yang harus Anda ikuti agar proses pendirian PT berjalan lancar.<br><br>
+
+            Syarat Pendirian PT<br>
+            Sebelum memulai proses pendirian PT, Anda perlu memenuhi beberapa syarat yang ditentukan oleh hukum yang berlaku di Indonesia. Berikut adalah syarat-syarat yang harus dipenuhi:<br><br>
+
+            Jumlah Pendiri<br>
+
+            PT harus didirikan oleh minimal dua orang yang akan menjadi pemegang saham. Satu orang tidak dapat mendirikan PT, karena PT adalah perusahaan yang berbentuk perseroan.<br><br>
+            Modal Dasar dan Modal Setor<br>
+
+            Modal Dasar: Modal dasar untuk pendirian PT adalah minimal Rp50.000.000 (lima puluh juta rupiah) sesuai dengan UU No. 40 Tahun 2007 tentang Perseroan Terbatas. Namun, peraturan ini bisa berubah tergantung pada kebijakan yang berlaku.<br>
+            Modal Setor: Dari modal dasar tersebut, setidaknya 25% harus disetorkan pada saat pendirian. Jadi, jika modal dasar Anda adalah Rp50.000.000, maka minimal yang harus disetor adalah Rp12.500.000.<br><br>
+            Pemegang Saham<br>
+
+            Pemegang saham PT bisa terdiri dari individu atau badan hukum, baik WNI (Warga Negara Indonesia) maupun WNA (Warga Negara Asing).<br>
+            Jika PT memiliki saham asing, maka ada aturan mengenai kepemilikan asing yang harus dipatuhi, yang berbeda-beda tergantung pada sektor usaha.<br><br>
+            Direktur dan Komisaris<br>
+
+            PT harus memiliki minimal 1 orang Direktur dan 1 orang Komisaris. Direktur bertanggung jawab untuk menjalankan perusahaan, sementara Komisaris berfungsi untuk mengawasi jalannya perusahaan.<br>
+            Direktur PT tidak diharuskan memiliki kewarganegaraan Indonesia, sedangkan Komisaris harus WNI.<br><br>
+            Alamat Domisili<br>
+
+            PT harus memiliki alamat domisili yang jelas dan sesuai dengan peraturan. Surat Keterangan Domisili Perusahaan (SKDP) dari kelurahan setempat akan diperlukan.<br><br>
+            Akta Pendirian dan Pengesahan dari Kemenkumham<br>
+
+            Akta pendirian PT harus dibuat di hadapan notaris dan disahkan oleh Kementerian Hukum dan Hak Asasi Manusia (Kemenkumham). Akta ini berisi informasi mengenai struktur organisasi, modal dasar, dan kegiatan usaha PT.<br>
+            Nomor Pokok Wajib Pajak (NPWP)<br><br>
+
+            PT wajib memiliki NPWP untuk tujuan pajak. NPWP ini dapat didaftarkan melalui kantor pajak terdekat.<br><br>
+            Prosedur Pendirian PT<br>
+            Berikut adalah langkah-langkah prosedur yang perlu Anda ikuti untuk mendirikan PT di Indonesia:<br>
+
+            1. Persiapkan Dokumen dan Data yang Diperlukan<br>
+            Data Pemegang Saham: Nama, KTP, NPWP, dan alamat domisili dari setiap pemegang saham.<br>
+            Data Direktur dan Komisaris: Nama, KTP, NPWP, serta alamat domisili.<br>
+            Akta Pendirian PT: Draf akta pendirian yang memuat nama PT, maksud dan tujuan pendirian, modal dasar, struktur pemegang saham, serta alamat perusahaan.<br>
+            Surat Keterangan Domisili (SKDP): Surat ini diterbitkan oleh kelurahan atau desa setempat sebagai bukti alamat perusahaan.<br>
+            2. Pilih Nama Perusahaan<br>
+            Nama PT harus unik dan belum digunakan oleh perusahaan lain. Anda perlu mengecek ketersediaan nama perusahaan melalui sistem online yang disediakan oleh Kemenkumham.<br>
+            3. Buat Akta Pendirian di Notaris<br>
+            Setelah nama PT disetujui, Anda perlu membuat akta pendirian PT di hadapan notaris. Akta ini berisi semua informasi penting mengenai perusahaan seperti nama perusahaan, tujuan usaha, modal dasar, struktur pemegang saham, dan struktur organisasi.<br>
+            4. Pengesahan Akta Pendirian oleh Kemenkumham<br>
+            Akta pendirian yang sudah ditandatangani oleh notaris harus disahkan oleh Kementerian Hukum dan HAM. Proses pengesahan ini biasanya dilakukan secara online melalui Sistem Administrasi Badan Usaha (SABU).<br>
+            5. Pendaftaran NPWP dan PKP (jika diperlukan)<br>
+            Setelah pengesahan akta, Anda perlu mendaftarkan PT untuk mendapatkan NPWP (Nomor Pokok Wajib Pajak) dan PKP (Pengusaha Kena Pajak) jika omzet perusahaan sudah mencapai batas tertentu.<br>
+            6. Pendaftaran di Sistem OSS (Online Single Submission)<br>
+            Untuk mendapatkan izin usaha dan Nomor Induk Berusaha (NIB), PT wajib mendaftarkan perusahaan melalui sistem OSS (Online Single Submission). Di sini Anda akan mendapatkan NIB dan izin usaha sesuai dengan sektor usaha perusahaan.<br>
+            7. Lakukan Pengurusan Izin Usaha<br>
+            Pengurusan izin usaha tergantung pada jenis usaha yang dijalankan. Misalnya, jika usaha Anda bergerak di bidang perdagangan, maka Anda perlu mengurus izin usaha perdagangan melalui sistem OSS.<br>
+            8. Pengumuman Pendirian PT<br>
+            Setelah proses selesai, pengumuman pendirian PT harus dilakukan sesuai dengan peraturan yang berlaku. Pengumuman ini bertujuan untuk memberikan informasi kepada masyarakat luas mengenai keberadaan perusahaan Anda.<br><br>
+
+            Kesimpulan<br>
+            Mendirikan PT merupakan langkah penting untuk mengembangkan usaha yang lebih besar dan memiliki perlindungan hukum yang lebih kuat. Proses pendiriannya memang membutuhkan waktu dan biaya, namun keuntungan yang didapatkan sangat besar, seperti perlindungan terhadap aset pribadi, kemampuan untuk menarik investor, dan kemudahan dalam memperoleh pinjaman dari lembaga keuangan.<br><br>
+
+            Jika Anda ingin mendirikan PT namun merasa kesulitan dengan prosesnya, Anda dapat menggunakan jasa profesional seperti kantor notaris atau konsultan bisnis untuk mempermudah proses pendirian PT. Dengan memilih langkah yang tepat, Anda dapat memastikan kelancaran usaha Anda sejak awal.<br><br>
+
+            Hubungi Kami di KantorPerizinan.com untuk Mendapatkan Bantuan dalam Pendirian PT!
+        `,
+        author: "Admin KantorPerizinan.com",
+    },
 ];
 
 function renderBeritaUtama(berita) {
