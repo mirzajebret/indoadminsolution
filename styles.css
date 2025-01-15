@@ -16,6 +16,11 @@ body {
 }
 
 
+.clients-logos{
+    color: white;
+    font-weight: 600;
+}
+
 h1 {
   font-size: 36px;  
 }

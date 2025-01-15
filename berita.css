@@ -1,0 +1,12 @@
+#berita-utama{
+    max-height: 1700px; 
+    overflow: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+@media (max-width: 768px) {
+
+    #berita-utama{
+        max-height: 900px; }
+}

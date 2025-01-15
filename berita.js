@@ -292,7 +292,7 @@ function renderBeritaUtama(berita) {
         </div>
         <h2 class="text-xl font-semibold mb-2 text-amber-300">${berita.judul}</h2>
         <p class="text-slate-300 mb-4">oleh ${berita.author}</p>
-        <p class="text-white mb-4 text-justify">${berita.deskripsi}</p>
+        <p class="text-white mb-4 text-justify" style="font-weight:400;">${berita.deskripsi}</p>
     `;
 }
 
