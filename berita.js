@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div>
                     <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">${berita.kategori}</span>
                     <h3 class="text-lg font-bold mt-2 text-slate-800">${berita.judul}</h3>
-                    <p class="text-gray-500 text-sm">${berita.views} views</p>
+                     <p class="text-white text-sm">${berita.views} views</p>
                 </div>
             </div>
         `;
