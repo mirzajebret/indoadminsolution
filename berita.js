@@ -1,5 +1,60 @@
 const beritaTerkait = [
     {
+        kategori: "LEGALITAS",
+        judul: "Manfaat dan Pentingnya Legalitas Bisnis",
+        views: "850",
+        img: "https://cowenpartners.com/wp-content/uploads/2022/05/AdobeStock_229719876-1130x660.jpeg",
+        deskripsi: `
+
+            Mendirikan bisnis bukan hanya soal menjual produk atau jasa, tetapi juga tentang membangun fondasi yang kokoh untuk keberlanjutan usaha. Salah satu langkah awal yang krusial adalah memastikan legalitas bisnis Anda terpenuhi. Sayangnya, banyak pelaku usaha yang masih mengabaikan pentingnya legalitas, padahal ini adalah kunci untuk menjalankan bisnis yang aman, terpercaya, dan berkembang. Berikut adalah penjelasan menarik tentang manfaat dan pentingnya legalitas bisnis yang perlu Anda pahami. <br><br>
+
+            Apa Itu Legalitas Bisnis?<br>
+
+            Legalitas bisnis adalah pengakuan resmi dari pemerintah terhadap keberadaan usaha Anda. Ini mencakup dokumen seperti Nomor Induk Berusaha (NIB), Surat Izin Usaha, serta akta pendirian badan usaha seperti PT, CV, atau bentuk usaha lainnya. Dengan memenuhi legalitas, bisnis Anda tidak hanya diakui secara hukum, tetapi juga mendapatkan berbagai keuntungan yang mendukung pertumbuhan usaha.<br><br>
+
+            Manfaat Legalitas Bisnis<br>
+                1.	Perlindungan Hukum<br>
+            Dengan legalitas, bisnis Anda terlindungi dari potensi konflik hukum. Baik itu sengketa dengan pelanggan, mitra bisnis, maupun pemerintah, legalitas memberikan kepastian dan landasan yang kuat untuk menyelesaikan masalah. Anda juga dapat membuat kontrak yang sah di mata hukum, melindungi hak dan kewajiban Anda.<br><br>
+                2.	Meningkatkan Kepercayaan Konsumen dan Mitra<br>
+            Konsumen cenderung lebih percaya pada bisnis yang legal karena menunjukkan komitmen terhadap transparansi dan integritas. Mitra bisnis besar, seperti perusahaan multinasional atau lembaga keuangan, juga hanya bekerja dengan entitas yang memiliki dokumen resmi.<br><br>
+                3.	Kemudahan Mengakses Pendanaan<br>
+            Jika bisnis Anda memerlukan pinjaman bank atau ingin menarik investor, legalitas adalah syarat utama. Bank dan investor hanya mendukung usaha yang memiliki dokumen resmi karena ini menunjukkan bisnis Anda dapat dipercaya.<br><br>
+                4.	Akses ke Program Pemerintah<br>
+            Pemerintah sering menyediakan berbagai insentif dan program pendampingan untuk usaha yang memiliki legalitas. Misalnya, subsidi pajak, pelatihan, atau bantuan modal untuk pengembangan usaha.<br>
+                5.	Mempermudah Ekspansi Bisnis<br><br>
+            Dengan legalitas, Anda dapat membuka cabang baru, menjalin kerja sama dengan mitra, dan melakukan ekspansi tanpa hambatan. Bisnis yang diakui secara hukum memiliki kebebasan untuk berkembang tanpa batas.<br><br>
+                6.	Keamanan Operasional<br>
+            Usaha tanpa legalitas rawan ditutup oleh pemerintah karena dianggap ilegal. Dengan memenuhi legalitas, Anda tidak perlu khawatir menghadapi razia atau denda administratif yang merugikan.<br><br>
+
+            Mengapa Legalitas Itu Penting?<br>
+                1.	Kepastian Hukum<br>
+            Legalitas memberikan dasar hukum yang jelas untuk setiap aktivitas bisnis Anda. Hal ini penting untuk melindungi usaha Anda dari risiko seperti tuntutan hukum, sengketa kontrak, atau pelanggaran regulasi.<br><br>
+                2.	Keberlanjutan Bisnis<br>
+            Usaha yang legal memiliki peluang lebih besar untuk bertahan dalam jangka panjang. Legalitas membantu Anda menjalankan bisnis dengan aman, tanpa ancaman pembubaran oleh pihak berwenang.<br><br>
+                3.	Kontribusi pada Perekonomian<br>
+            Dengan legalitas, Anda berkontribusi pada pembangunan negara melalui pembayaran pajak dan penciptaan lapangan kerja. Bisnis Anda menjadi bagian dari ekosistem ekonomi yang sehat.<br><br>
+                4.	Meningkatkan Reputasi<br>
+            Legalitas mencerminkan profesionalisme. Ketika bisnis Anda memiliki izin resmi, pelanggan dan mitra bisnis akan melihat usaha Anda sebagai entitas yang serius dan terpercaya.<br><br>
+
+            Bagaimana Cara Memenuhi Legalitas Bisnis?<br>
+                1.	Pilih Bentuk Usaha yang Tepat<br>
+            Tentukan apakah Anda akan mendirikan PT, CV, koperasi, atau bentuk usaha lainnya, sesuai dengan kebutuhan dan skala bisnis.<br><br>
+                2.	Buat Akta Pendirian di Notaris<br>
+            Untuk badan usaha seperti PT dan CV, Anda memerlukan akta pendirian yang disahkan oleh notaris.<br><br>
+                3.	Daftarkan Usaha Anda ke Pemerintah<br>
+            Ajukan pendaftaran usaha melalui sistem Online Single Submission (OSS) untuk mendapatkan Nomor Induk Berusaha (NIB), izin lokasi, dan izin usaha.<br><br>
+                4.	Lengkapi Dokumen Tambahan<br>
+            Pastikan Anda memiliki dokumen tambahan seperti NPWP, izin lingkungan (jika diperlukan), dan sertifikasi khusus untuk sektor tertentu.<br><br>
+        
+            Kesimpulan
+            <br>
+            Legalitas bisnis bukan hanya sebuah formalitas, tetapi landasan yang menentukan keberhasilan usaha Anda. Dengan memenuhi legalitas, Anda membuka peluang lebih besar untuk mengembangkan bisnis secara aman dan berkelanjutan. Legalitas tidak hanya melindungi usaha Anda secara hukum, tetapi juga meningkatkan kepercayaan konsumen, mempermudah akses pendanaan, dan memberikan kontribusi positif bagi masyarakat.
+            <br>
+            Memenuhi legalitas adalah investasi kecil yang membawa manfaat besar. Jadi, pastikan bisnis Anda berjalan di jalur yang benar dengan mengurus legalitas sejak awal. Dengan begitu, Anda tidak hanya membangun usaha, tetapi juga masa depan yang kokoh dan penuh peluang.
+        `,
+        author: "Admin KantorPerizinan.com",
+    },
+    {
         kategori: "DIGITALISASI",
         judul: "PPAT dan Pentingnya Sertifikasi Elektronik untuk Keamanan Transaksi Tanah",
         views: "850",
@@ -231,13 +286,13 @@ function renderBeritaUtama(berita) {
         <img alt="${berita.judul}" class="w-full max-h-300px object-contain rounded-lg mb-4" src="${berita.img}"/>
         <div class="flex items-center mb-2">
             <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">${berita.kategori}</span>
-            <div class="flex items-center ml-4 text-gray-500">
-                <i class="fas fa-eye mr-1"></i> ${berita.views}
+            <div class="flex items-center ml-4 text-white">
+                <i class="fas fa-eye mr-1 text-white"></i> ${berita.views}
             </div>
         </div>
-        <h2 class="text-xl font-bold mb-2 text-slate-800">${berita.judul}</h2>
-        <p class="text-gray-400 mb-4">oleh ${berita.author}</p>
-        <p class="text-slate-800 mb-4 text-justify">${berita.deskripsi}</p>
+        <h2 class="text-xl font-semibold mb-2 text-amber-300">${berita.judul}</h2>
+        <p class="text-slate-300 mb-4">oleh ${berita.author}</p>
+        <p class="text-white mb-4 text-justify">${berita.deskripsi}</p>
     `;
 }
 
@@ -248,7 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     beritaTerkait.forEach((berita, index) => {
         const beritaHTML = `
-            <div class="bg-amber-100 rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
+            <div class="bg-[#82899c] rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
                 <img alt="${berita.judul}" class="w-24 h-24 rounded-lg mr-4" src="${berita.img}"/>
                 <div>
                     <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">${berita.kategori}</span>
