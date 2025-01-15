@@ -62,6 +62,56 @@ const beritaTerkait = [
         `,
         author: "Admin KantorPerizinan.com",
     },
+    {
+        kategori: "DIGITALISASI",
+        judul: "Panduan Lengkap : Syarat & Prosedur Pendirian CV",
+        views: "1.2k",
+        img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-CV.jpg",
+        deskripsi: `
+            Memilih bentuk badan usaha yang tepat sangat penting, terutama bagi Anda yang baru memulai usaha atau berencana mengembangkan bisnis. Salah satu opsi yang bisa dipertimbangkan adalah Commanditaire Vennootschap (CV). Selain memberikan kemudahan dalam pendirian, CV juga menawarkan sejumlah keuntungan bagi pelaku usaha, khususnya dalam mengakses kredit dan mengembangkan usaha. <br><br>
+
+            Apa Itu CV dan Bagaimana Cara Kerjanya?<br>
+            Commanditaire Vennootschap (CV) adalah badan usaha yang dibentuk oleh dua jenis sekutu: sekutu aktif dan sekutu pasif. Sekutu aktif bertanggung jawab penuh atas pengelolaan perusahaan, sedangkan sekutu pasif hanya memberikan modal dan tidak terlibat langsung dalam operasional perusahaan. Keuntungan bagi sekutu pasif adalah tanggung jawab terbatas pada jumlah modal yang disetorkan.<br>
+
+            CV umumnya dipilih oleh pengusaha yang membutuhkan kemudahan dalam mengelola bisnis, tetapi tidak ingin terikat oleh persyaratan yang rumit seperti yang terdapat pada Perseroan Terbatas (PT).<br><br>
+
+            Keuntungan Mendirikan CV<br>
+            Akses Lebih Mudah ke Kredit Salah satu keuntungan utama mendirikan CV adalah kemudahan dalam mengakses kredit perbankan atau lembaga keuangan lainnya. Dengan status sebagai badan hukum, CV dapat mengajukan pinjaman dengan jaminan aset usaha.<br>
+
+            Kolaborasi yang Fleksibel CV memungkinkan pengusaha untuk bekerja sama dengan pihak lain. Sebagai persekutuan, CV memberikan ruang bagi beberapa orang untuk berkolaborasi, menyumbangkan modal, dan bekerja sama dalam mencapai tujuan bisnis yang sama.<br>
+
+            Perlindungan Hukum untuk Pengusaha Meskipun CV merupakan bentuk persekutuan, badan usaha ini tetap memberikan perlindungan hukum kepada para pendiri dan sekutunya. Selain itu, kehadiran CV sebagai badan hukum memberikan kepastian dalam menjalankan usaha.<br>
+
+            Pengembangan Usaha yang Lebih Terarah Bagi pelaku UMKM yang ingin naik kelas, CV bisa menjadi solusi yang tepat. Dengan struktur yang lebih sederhana, pendirian CV memberikan kesempatan untuk memperluas bisnis tanpa terhambat oleh modal yang terbatas.<br><br>
+
+            Perbedaan CV dengan PT<br>
+            Walaupun sama-sama berupa badan usaha, terdapat sejumlah perbedaan mendasar antara CV dan PT, di antaranya:<br>
+
+            * Tanggung Jawab: Di CV, sekutu aktif bertanggung jawab penuh atas operasional dan risiko perusahaan, sementara PT memberikan perlindungan terbatas kepada pemiliknya.<br>
+            * Modal dan Kepemilikan: CV tidak mengharuskan adanya modal minimum, sedangkan PT memerlukan modal dasar yang dibagi menjadi saham.<br>
+            * Struktur Organisasi: CV lebih sederhana, dengan sekutu aktif yang mengelola usaha, sementara PT memiliki struktur formal dengan direksi dan komisaris.<br><br>
+            Syarat dan Proses Pendirian CV<br>
+            Pendirian CV diatur dalam Kitab Undang-Undang Hukum Dagang (KUHD) dan Kitab Undang-Undang Hukum Perdata (KUHPerdata). Berikut adalah syarat dan proses yang perlu Anda ketahui:<br>
+
+            Syarat Pendirian CV<br>
+            1. Sekutu Aktif dan Pasif: CV harus terdiri dari setidaknya dua orang—sekutu aktif yang mengelola usaha dan sekutu pasif yang menyetor modal.<br>
+            2. Dokumen Pendiri: Setiap pendiri harus melampirkan KTP dan NPWP, serta dokumen tambahan seperti surat keterangan domisili dan pernyataan klasifikasi usaha.<br>
+            3. Kewarganegaraan: Pendiri harus merupakan Warga Negara Indonesia (WNI), karena partisipasi modal asing tidak diperbolehkan.<br><br>
+            Proses Pendirian CV<br>
+            1. Menyiapkan Data Pendiri: Anda perlu menyiapkan informasi lengkap tentang nama CV, maksud dan tujuan pendirian, struktur kepengurusan, dan alamat domisili.<br>
+            2. Pendaftaran Nama CV: Nama CV harus unik dan sesuai ketentuan, kemudian didaftarkan ke Kementerian Hukum dan HAM.<br>
+            3. Akta Pendirian: Setelah nama disetujui, Anda perlu membuat akta pendirian di hadapan notaris.<br>
+            4. Pengurusan Dokumen Tambahan: Seperti Surat Keterangan Domisili Perusahaan (SKDP) dan NPWP perusahaan.<br>
+            5. Pendaftaran di Pengadilan Negeri: CV harus didaftarkan di Pengadilan Negeri setempat, yang memerlukan waktu beberapa minggu.<br>
+            6. Nomor Izin Berusaha (NIB): Setelah disetujui, langkah terakhir adalah mendapatkan NIB melalui Online Single Submission (OSS).<br>
+            <br><br>
+            Kesimpulan<br>
+            Memilih CV untuk usaha Anda adalah pilihan yang cerdas, terutama bagi yang menginginkan struktur yang sederhana, biaya lebih terjangkau, dan akses lebih mudah ke pembiayaan. Dengan modal yang lebih fleksibel dan perlindungan hukum yang memadai, CV memungkinkan pengusaha untuk fokus mengembangkan usaha tanpa harus memikirkan hambatan birokrasi yang rumit. Jika Anda tertarik untuk mendirikan CV, kantorperizinan.com siap membantu Anda menjalankan proses pendirian dengan cepat dan efisien.<br><br>
+
+            Hubungi kami untuk mendapatkan layanan konsultasi dan pengurusan dokumen usaha Anda!
+        `,
+        author: "Admin KantorPerizinan.com",
+    },
 ];
 
 // Render berita utama
