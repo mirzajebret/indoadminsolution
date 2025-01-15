@@ -45,7 +45,7 @@ function renderBeritaUtama(berita) {
         </div>
         <h2 class="text-xl font-bold mb-2">${berita.judul}</h2>
         <p class="text-gray-500 mb-4">oleh ${berita.author}</p>
-        <p class="text-gray-700 mb-4">${berita.deskripsi}</p>s
+        <p class="text-gray-700 mb-4">${berita.deskripsi}</p>
     `;
 }
 
