@@ -45,7 +45,7 @@ function renderBeritaUtama(berita) {
         </div>
         <h2 class="text-xl font-bold mb-2">${berita.judul}</h2>
         <p class="text-gray-500 mb-4">oleh ${berita.author}</p>
-        <p class="text-gray-700 mb-4">${berita.deskripsi}</p>
+        <p class="text-gray-700 mb-4">${berita.deskripsi}</p>s
     `;
 }
 
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener("click", (event) => {
             const index = event.currentTarget.dataset.index;
             renderBeritaUtama(beritaTerkait[index]);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 });
