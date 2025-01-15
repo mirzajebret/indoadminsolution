@@ -8,5 +8,6 @@
 @media (max-width: 768px) {
 
     #berita-utama{
-        max-height: 900px; }
+        max-height: 600px; 
+    }
 }
