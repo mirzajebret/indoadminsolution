@@ -125,9 +125,9 @@ function renderBeritaUtama(berita) {
                 <i class="fas fa-eye mr-1"></i> ${berita.views}
             </div>
         </div>
-        <h2 class="text-xl font-bold mb-2">${berita.judul}</h2>
-        <p class="text-gray-500 mb-4">oleh ${berita.author}</p>
-        <p class="text-gray-700 mb-4 text-justify">${berita.deskripsi}</p>
+        <h2 class="text-xl font-bold mb-2 text-amber-300">${berita.judul}</h2>
+        <p class="text-gray-400 mb-4">oleh ${berita.author}</p>
+        <p class="text-white mb-4 text-justify">${berita.deskripsi}</p>
     `;
 }
 
@@ -141,12 +141,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render berita terkait
     beritaTerkait.forEach((berita, index) => {
         const beritaHTML = `
-            <div class="bg-white rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
+            <div class="bg-slate-800 rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
                 <img alt="${berita.judul}" class="w-24 h-24 rounded-lg mr-4" src="${berita.img}"/>
                 <div>
                     <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">${berita.kategori}</span>
-                    <h3 class="text-lg font-bold mt-2">${berita.judul}</h3>
-                    <p class="text-gray-500 text-sm">${berita.views} views</p>
+                    <h3 class="text-lg font-bold mt-2 text-amber-300">${berita.judul}</h3>
+                    <p class="text-gray-500 text-sm text-white">${berita.views} views</p>
                 </div>
             </div>
         `;
