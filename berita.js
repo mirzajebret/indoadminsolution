@@ -1,4 +1,3 @@
-// Data berita terkait
 const beritaTerkait = [
     {
         kategori: "DIGITALISASI",
@@ -114,7 +113,6 @@ const beritaTerkait = [
     },
 ];
 
-// Render berita utama
 function renderBeritaUtama(berita) {
     const beritaUtamaContainer = document.getElementById("berita-utama");
     beritaUtamaContainer.innerHTML = `
@@ -131,14 +129,11 @@ function renderBeritaUtama(berita) {
     `;
 }
 
-// Render berita lainnya
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("berita-terkait-container");
 
-    // Render berita utama dengan berita pertama
     renderBeritaUtama(beritaTerkait[0]);
 
-    // Render berita terkait
     beritaTerkait.forEach((berita, index) => {
         const beritaHTML = `
             <div class="bg-slate-800 rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
@@ -154,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML += beritaHTML;
     });
 
-    // Tambahkan event listener untuk setiap berita terkait
     container.querySelectorAll(".cursor-pointer").forEach((item) => {
         item.addEventListener("click", (event) => {
             const index = event.currentTarget.dataset.index;
