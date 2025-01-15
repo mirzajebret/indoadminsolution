@@ -30,6 +30,38 @@ const beritaTerkait = [
         `,
         author: "Admin KantorPerizinan.com",
     },
+    {
+        kategori: "DIGITALISASI",
+        judul: "Digitalisasi Layanan Perizinan: Mempermudah Akses dan Transparansi bagi Masyarakat",
+        views: "1.2k",
+        img: "https://lenna.ai/wp-content/uploads/2023/11/Transformasi-1200x500.png",
+        deskripsi: `
+            Pemerintah Indonesia terus berupaya meningkatkan kualitas layanan publik melalui digitalisasi, termasuk dalam hal perizinan. Langkah ini bertujuan untuk mempermudah akses, meningkatkan transparansi, dan efisiensi bagi masyarakat serta pelaku usaha.
+
+            <br><br><strong>Manfaat Digitalisasi Layanan Perizinan</strong> <br>
+
+            <strong>Kemudahan Akses:</strong> Masyarakat dapat mengajukan permohonan izin kapan saja dan di mana saja melalui platform online, tanpa perlu mendatangi kantor pemerintahan secara langsung.
+
+            <strong>Transparansi Proses:</strong> Setiap tahapan permohonan izin dapat dipantau secara real-time, sehingga pemohon mengetahui status dan perkembangan permohonannya.
+
+            <strong>Efisiensi Waktu dan Biaya:</strong> Proses yang sebelumnya memakan waktu lama kini dapat diselesaikan lebih cepat dengan pengurangan birokrasi dan dokumen fisik.
+
+            <strong>Inisiatif Digitalisasi di Berbagai Daerah</strong>
+
+            Beberapa pemerintah daerah telah meluncurkan layanan perizinan online untuk meningkatkan pelayanan kepada masyarakat. Misalnya, Pemerintah Kota Bandung melalui Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP) telah memperkenalkan layanan Mobil Keliling Elektronik untuk Masyarakat (Molling e-Mas) dan Konsultasi Perizinan Online yang Amanah dan Ramah (Karomah) untuk memberikan kemudahan dalam pengajuan izin secara online. 
+            DPMPTSP BANDUNG
+
+            Selain itu, Kementerian Komunikasi dan Informatika melalui Direktorat Jenderal Penyelenggaraan Pos dan Informatika (Ditjen PPI) telah mengembangkan Sistem Perizinan Online yang memungkinkan pengguna layanan mengajukan, memantau, dan mendapatkan izin secara online dengan layanan yang cepat jika semua syarat sudah terpenuhi. 
+            <br><br>KOMDIGI
+
+            <strong>Langkah Menuju Transformasi Digital</strong>
+
+            Transformasi digital dalam layanan perizinan memerlukan kolaborasi antara pemerintah, masyarakat, dan pelaku usaha. Pemerintah berkomitmen untuk terus mengembangkan infrastruktur dan sistem yang mendukung layanan perizinan online, sementara masyarakat diharapkan dapat memanfaatkan layanan ini dengan optimal.
+
+            Dengan adanya digitalisasi layanan perizinan, diharapkan proses pengajuan izin menjadi lebih mudah, cepat, dan transparan, sehingga dapat mendorong pertumbuhan ekonomi dan investasi di Indonesia.
+        `,
+        author: "Admin KantorPerizinan.com",
+    },
 ];
 
 // Render berita utama
@@ -45,7 +77,7 @@ function renderBeritaUtama(berita) {
         </div>
         <h2 class="text-xl font-bold mb-2">${berita.judul}</h2>
         <p class="text-gray-500 mb-4">oleh ${berita.author}</p>
-        <p class="text-gray-700 mb-4">${berita.deskripsi}</p>
+        <p class="text-gray-700 mb-4 text-justify">${berita.deskripsi}</p>
     `;
 }
 
