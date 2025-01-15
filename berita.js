@@ -230,7 +230,7 @@ function renderBeritaUtama(berita) {
     beritaUtamaContainer.innerHTML = `
         <img alt="${berita.judul}" class="w-full max-h-300px object-contain rounded-lg mb-4" src="${berita.img}"/>
         <div class="flex items-center mb-2">
-            <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">${berita.kategori}</span>
+            <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">${berita.kategori}</span>
             <div class="flex items-center ml-4 text-gray-500">
                 <i class="fas fa-eye mr-1"></i> ${berita.views}
             </div>
