@@ -216,7 +216,8 @@ p {
 
 .our-clients-section {
     padding: 50px 20px;
-    text-align: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .our-clients-section h3 {

@@ -239,12 +239,11 @@
   }
 }
 
-/* General Slider Container */
 .slider {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-color: #fff; /* Optional: Adds a background color */
+  background-color: #fff; 
 }
 
 .slide-track {
