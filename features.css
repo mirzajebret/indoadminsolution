@@ -120,12 +120,12 @@
   flex-wrap: wrap;
 }
 .testimonial-card {
-  background-color: white;
+  background-color: #2A3A54;
+  border: solid 2px gold;
   border-radius: 10px;
   padding: 20px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
 
@@ -138,13 +138,13 @@
 }
 .testimonial-card p {
   font-size: 1rem;
-  color: #555;
+  color: #ffffff;
   margin-bottom: 10px;
   font-style: italic;
 }
 .testimonial-card span {
   font-size: 0.9rem;
-  color: #777;
+  color: gold;
   font-weight: 500;
 }
 

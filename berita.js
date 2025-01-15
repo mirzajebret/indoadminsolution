@@ -114,7 +114,7 @@ const beritaTerkait = [
     {
         kategori: "LEGALISASI",
         judul: "Bingung Pilih Pembuatan CV atau PT? Ketahui Perbedaan dan Keuntungannya!",
-        views: "1.2k",
+        views: "2.2k",
         img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-BINGUNG-PILIH-CV-ATAU-PT-rgb.jpg",
         deskripsi: `
             Memilih bentuk badan usaha yang tepat sangat penting, terutama bagi Anda yang baru memulai usaha atau berencana mengembangkan bisnis.<br>
@@ -157,7 +157,7 @@ const beritaTerkait = [
     {
         kategori: "LEGALISASI",
         judul: "Panduan Lengkap : Syarat & Prosedur Pendirian PT",
-        views: "1.2k",
+        views: "1k",
         img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-PT.jpg",
         deskripsi: `
             Mendirikan Perseroan Terbatas (PT) adalah salah satu pilihan yang tepat bagi pengusaha yang ingin memulai usaha dalam skala yang lebih besar, dengan perlindungan hukum yang jelas dan peluang untuk menarik investor. PT juga memungkinkan Anda untuk mengembangkan usaha lebih cepat, menarik pinjaman dari bank, dan mendapatkan kepercayaan lebih dari masyarakat dan lembaga keuangan. <br><br>
@@ -235,9 +235,9 @@ function renderBeritaUtama(berita) {
                 <i class="fas fa-eye mr-1"></i> ${berita.views}
             </div>
         </div>
-        <h2 class="text-xl font-bold mb-2 text-amber-300">${berita.judul}</h2>
+        <h2 class="text-xl font-bold mb-2 text-slate-800">${berita.judul}</h2>
         <p class="text-gray-400 mb-4">oleh ${berita.author}</p>
-        <p class="text-white mb-4 text-justify">${berita.deskripsi}</p>
+        <p class="text-slate-800 mb-4 text-justify">${berita.deskripsi}</p>
     `;
 }
 
@@ -248,12 +248,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     beritaTerkait.forEach((berita, index) => {
         const beritaHTML = `
-            <div class="bg-slate-800 rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
+            <div class="bg-amber-100 rounded-lg shadow-md p-4 flex cursor-pointer" data-index="${index}">
                 <img alt="${berita.judul}" class="w-24 h-24 rounded-lg mr-4" src="${berita.img}"/>
                 <div>
                     <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">${berita.kategori}</span>
-                    <h3 class="text-lg font-bold mt-2 text-amber-300">${berita.judul}</h3>
-                    <p class="text-gray-500 text-sm text-white">${berita.views} views</p>
+                    <h3 class="text-lg font-bold mt-2 text-slate-800">${berita.judul}</h3>
+                    <p class="text-gray-500 text-sm">${berita.views} views</p>
                 </div>
             </div>
         `;
