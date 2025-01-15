@@ -63,7 +63,7 @@ const beritaTerkait = [
         author: "Admin KantorPerizinan.com",
     },
     {
-        kategori: "DIGITALISASI",
+        kategori: "LEGALISASI",
         judul: "Panduan Lengkap : Syarat & Prosedur Pendirian CV",
         views: "1.2k",
         img: "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/NEWS-BANNER/NEWS-CV.jpg",
