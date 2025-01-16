@@ -62,12 +62,8 @@ img.text-image-square {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
 }
 
-.social-icons a:hover {
-    background-color: black;
-}
 
 .footer-section.links ul {
     list-style: none;
@@ -82,12 +78,8 @@ img.text-image-square {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s;
 }
 
-.footer-section.links ul li a:hover {
-    color: #ff5722  ;
-}
 
 #whatsapp-button {
     position: fixed;

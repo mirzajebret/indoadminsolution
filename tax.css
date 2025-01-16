@@ -1,6 +1,6 @@
 body {
     position: relative;
-    background-image: url('https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/bg/test-bg1.JPG');
+    background-image: url('https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/bg/test-bg1.jpg');
     background-size:contain ;
     background-position: center center;
 }
@@ -41,7 +41,6 @@ body {
     width: calc(25% - 20px); /* 4 cards per row */
     text-align: center;
     padding: 0;
-    transition: transform 0.3s;
 }
 
 .tax-services .card.half-width {
@@ -52,9 +51,6 @@ body {
     width: calc(33.33% - 20px); /* 3 cards per row */
 }
 
-.tax-services .card:hover {
-    transform: translateY(-5px);
-}
 
 .tax-services .card img {
     width: 100%;
