@@ -68,11 +68,6 @@
   font-size: 1rem;
   border-radius: 25px;
   font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.ias-hero-btn:hover {
-  background-color: #BD330A;
 }
 
 /* HEROUP Section */
@@ -121,9 +116,7 @@
 .heroup-image img {
   width: 100%;
 }
-.heroup-image video {
-  width: 70%;
-}
+
 
 .heroup-title {
   font-size: 2.5rem;
