@@ -15,6 +15,13 @@ body {
     backdrop-filter: brightness(1.4); 
 }
 
+.gold-gradient {
+    font-weight: 600;
+    background: linear-gradient(45deg, #ffd700, #daa520); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 
 .clients-logos{
     color: white;
