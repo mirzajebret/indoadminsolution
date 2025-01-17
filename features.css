@@ -73,6 +73,7 @@
 }
 
 .galeri-card {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +193,12 @@
   .small-carousel-card {
     flex: 0 0 25%;
   }
-
+  
 }
 
+@media (max-width: 768px) {
+  .galeri-card{
+    width: 95vw;
+
+  }
+}
