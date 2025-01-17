@@ -81,9 +81,9 @@
 
 .video-wrapper {
     position: relative;
-    width: 100%;
+    width: 50%;
     padding-bottom: 56.25%; 
-    height: 0;
+    height: 70%;
     overflow: hidden;
 }
 
@@ -198,7 +198,7 @@
 
 @media (max-width: 768px) {
   .galeri-card{
-    width: 100vw;
+    width: 100vw ;
 
   }
 }
