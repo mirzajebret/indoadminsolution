@@ -54,3 +54,68 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// List of company logo URLs
+const logos = [
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/COMPANY-JACCS-MPM.jpg",
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/COMPANY-LA-PALMA.jpg",
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/COMPANY-MITRA-MADANI-MANDIRI.jpg",
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/COMPANY-SEN.jpg",
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/YAYASAN-ISLAM-AL-MUSTAFA.jpg",
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/COMPANY-LOGO/COMPANY-SINERGY-SAKA-SELAMBUNG.jpg"
+];
+
+const slideTrack = document.getElementById("slide-track");
+
+function generateSlides(repeatCount) {
+    for (let i = 0; i < repeatCount; i++) {
+        logos.forEach((logo) => {
+            const slide = document.createElement("div");
+            slide.classList.add("company-slide");
+
+            const img = document.createElement("img");
+            img.src = logo;
+            img.loading = "lazy";
+            img.alt = "Company Logo";
+
+            slide.appendChild(img);
+            slideTrack.appendChild(slide);
+        });
+    }
+}
+
+// Generate logos twice to make a smooth loop
+generateSlides(3);
+
+
+// List of logo URLs for the secondary slider
+const secondaryLogos = [
+    "https://raw.githubusercontent.com/mirzajebret/indoadminsolution/refs/heads/main/img/kpcom-text-no-s.png",
+    "https://github.com/mirzajebret/indoadminsolution/blob/main/img/caro-ahu.png?raw=true",
+    "https://github.com/mirzajebret/indoadminsolution/blob/main/img/caro-djp.png?raw=true",
+    "https://github.com/mirzajebret/indoadminsolution/blob/main/img/caro-bpn.png?raw=true",
+    "https://github.com/mirzajebret/indoadminsolution/blob/main/img/caro-oss.png?raw=true"
+];
+
+const secondarySlideTrack = document.getElementById("secondary-slide-track");
+
+// Function to dynamically generate slides for the secondary slider
+function generateSecondarySlides(repeatCount) {
+    for (let i = 0; i < repeatCount; i++) {
+        secondaryLogos.forEach((logo) => {
+            const slide = document.createElement("div");
+            slide.classList.add("slide");
+
+            const img = document.createElement("img");
+            img.src = logo;
+            img.loading = "lazy";
+            img.alt = "Secondary Logo";
+
+            slide.appendChild(img);
+            secondarySlideTrack.appendChild(slide);
+        });
+    }
+}
+
+// Generate logos twice for smooth animation
+generateSecondarySlides(2);
