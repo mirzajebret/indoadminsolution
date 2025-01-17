@@ -134,11 +134,21 @@ p {
     top: -2px; /* Adjust to ensure it is exactly between the sections */
     width: 100%;
 }
+
+
+
 @media (min-height: 900px) {
-.gold-gradient-line{
-    top: -60px; 
+    .gold-gradient-line{
+        top: -60px; 
+    }
 }
+
+@media (min-width: 2500px) and (min-height: 1240px) {
+    .gold-gradient-line {
+        top: -109px;
+    }
 }
+
 @media (max-width: 768px) {
 
     .responsive-image {
@@ -187,8 +197,7 @@ p {
     padding: 50px 20px;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
-    background: rgba(46, 54, 70, 0.7);
-
+    background: rgb(78 95 128 / 70%);
 }
 
 
@@ -211,7 +220,6 @@ p {
 }
 
 .tentang-kami-content p {
-    font-size: 15px;
     color: white;
     line-height: 1.6;
 }
