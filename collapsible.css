@@ -16,6 +16,7 @@
 .web-services .card{
     max-width: 350px;
 }
+
 .collapsible p{
     color: gold;
     display: none;
@@ -32,13 +33,12 @@
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background: transparent;
 }
 
 .service-description{
-    border-top: solid 2.5px rgb(236, 192, 47);
-    background-color: rgba(29, 39, 56, 0.7);
+    border-top: solid 2.5px gold;
 }
+
 .service-description{
  color: white   ;
 }

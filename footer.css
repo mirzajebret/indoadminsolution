@@ -1,9 +1,7 @@
 footer {
-    /* background: linear-gradient(45deg, #BD330A, #ff5722, #BD330A); */
     background-color:#2A3A54;
     color: white;
     padding: 50px 0;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {
@@ -82,7 +80,7 @@ img.text-image-square {
 
 
 #whatsapp-button {
-    position: fixed;
+    position:fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 100%;

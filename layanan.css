@@ -167,7 +167,7 @@
 
 .service-banner {
     border: solid 2.5px rgb(236, 192, 47);
-    background: linear-gradient(203deg, rgba(37, 63, 105, 0.6), rgba(42, 58, 84, 1.0));
+    background-color: rgba(37, 63, 105, 0.6);
     color: white;
     padding: 30px;
     text-align: center;
