@@ -56,19 +56,15 @@ p {
     text-align: center;
 }
 
-.services h2 {
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #171717;
 
-}
 .services h1 {
     font-weight: 600;
     color: #fff;
 }
 .services p {
     margin-bottom: 30px;
-    color: #ffffff;
+    color: #fff;
+    text-align: left;
 }
 
 .service-cards {
@@ -90,9 +86,21 @@ p {
     border: 2px solid gold; /* Add this line */
     
 }
+
+.layanankami img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
 .layanankami h2{
     color: #fff;
     padding: 20px;
+    font-weight: 500;
+    font-size: 25px;
 }
 .card.visible {
     opacity: 1; 
