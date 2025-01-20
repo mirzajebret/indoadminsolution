@@ -224,12 +224,13 @@ p {
 }
 .tentang-kami-content {
     max-width: 600px;
+ 
 }
 
 .tentang-kami-content p {
+    text-align: justify;
     color: white;
     line-height: 1.6;
-    text-align: justify;
 }
 
 .our-clients-section {
