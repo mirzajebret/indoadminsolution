@@ -45,7 +45,59 @@
     color: #fff;
 }
 
-/* Responsive Styles */
+#kenapa-memilih {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #kenapa-memilih .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #kenapa-memilih h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .keunggulan-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .keunggulan-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .keunggulan-item .icon {
+    font-size: 3em;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .keunggulan-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .keunggulan-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Mobile responsiveness */
+
 @media (max-width: 768px) {
     .why-choose-us h2 {
         font-size: 1.5em;}
@@ -65,4 +117,15 @@
     .feature-item {
         width: 40%;
     }
+    #kenapa-memilih h2 {
+        font-size: 2em;
+      }
+    
+      .keunggulan-item h3 {
+        font-size: 1.2em;
+      }
+    
+      .keunggulan-item p {
+        font-size: 0.9em;
+      }
 }
