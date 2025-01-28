@@ -12,7 +12,6 @@ body {
     background-image: url('https://github.com/mirzajebret/indoadminsolution/blob/main/img/bg/XBBG.PNG?raw=true');
     background-size: contain;
     background-position: center center;
-    backdrop-filter: brightness(1.4); 
 }
 
 .gold-gradient {
