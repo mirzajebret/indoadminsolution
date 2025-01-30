@@ -144,15 +144,15 @@ p {
 
 
 
-@media (min-height: 900px) {
+/* @media (min-height: 900px) {
     .gold-gradient-line{
         top: -60px; 
     }
-}
+} */
 
 @media (min-width: 2500px) and (min-height: 1240px) {
     .gold-gradient-line {
-        top: -109px;
+        top: -37px;
     }
 }
 
