@@ -193,6 +193,9 @@
 @media (max-width: 768px) {
   .galeri-card{
     width: 100vw ;
-
   }
+  .small-carousel-container {
+    padding: 10px 0 10px;
+  }
+  
 }
